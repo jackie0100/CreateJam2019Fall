@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundEffect: MonoBehaviour
+[CreateAssetMenu(menuName = "ScriptableObjects/SoundEffect")]
+public class SoundEffect : ScriptableObject
 {
     public float limit; // seconds
     public bool oneShot;
@@ -15,68 +16,15 @@ public class SoundEffect: MonoBehaviour
     {
         public AudioClip soundFile;
         [Range(0.5f, 1.0f)]
-        public float pitchMin;
+        public float pitchMin = 1;
         [Range(1.0f, 2.0f)]
-        public float pitchMax;
+        public float pitchMax = 1;
         [Range(0f, 1f)]
-        public float volume;
+        public float volume = 1;
     }
     public Sound[] sound;
 
     private float timeSinceLastSound;
     private float timeLastSound;
     private float clipLength;
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-//            PlaySound();
-        }
-    }
-
-    public void PlaySound()
-    {
-        timeSinceLastSound = Time.fixedTime - timeLastSound;
-
-        switch (oneShot)
-        {
-            case true:
-                if (timeSinceLastSound > limit)
-                {
-                    SetSoundSettings();
-                    audioSource.PlayOneShot(audioSource.clip);
-                    timeLastSound = Time.fixedTime;
-                }
-                break;
-            case false:
-                if (timeSinceLastSound > clipLength)
-                {
-                    SetSoundSettings();
-                    audioSource.Play();
-                    clipLength = audioSource.clip.length;
-                    timeLastSound = Time.fixedTime;
-                }
-                break;
-        }
-    }
-
-    private void SetSoundSettings()
-    {
-        selectedFile = Random.Range(0, sound.Length);
-        audioSource.clip = sound[selectedFile].soundFile;
-
-        float min = sound[selectedFile].pitchMin;
-        if (min < 0.5f) { min = 1; }
-        float max = sound[selectedFile].pitchMax;
-        if (max < 0.5f) { max = min; }
-
-        audioSource.pitch = Random.Range(min, max);
-        audioSource.volume = sound[selectedFile].volume;
-    }
 }
