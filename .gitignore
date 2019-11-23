@@ -4,5 +4,5 @@ Logs/
 obj/
 .vs/E-KompletCantina/v15/
 .vs/
-CreateJam2019Fall.sln
-Assembly-CSharp.csproj
+*.sln
+*.csproj
