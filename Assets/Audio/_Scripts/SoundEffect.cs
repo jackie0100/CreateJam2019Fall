@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SoundEffect: MonoBehaviour
 {
+    public float limit; // seconds
     public bool oneShot;
 
     private AudioSource audioSource;
@@ -22,6 +23,7 @@ public class SoundEffect: MonoBehaviour
     }
     public Sound[] sound;
 
+    private float timeSinceLastSound;
     private float timeLastSound;
     private float clipLength;
 
@@ -34,21 +36,25 @@ public class SoundEffect: MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlaySound();
+//            PlaySound();
         }
     }
 
     public void PlaySound()
     {
+        timeSinceLastSound = Time.fixedTime - timeLastSound;
+
         switch (oneShot)
         {
             case true:
-                SetSoundSettings();
-                audioSource.PlayOneShot(audioSource.clip);
+                if (timeSinceLastSound > limit)
+                {
+                    SetSoundSettings();
+                    audioSource.PlayOneShot(audioSource.clip);
+                    timeLastSound = Time.fixedTime;
+                }
                 break;
             case false:
-                float timeSinceLastSound = Time.fixedTime - timeLastSound;
-
                 if (timeSinceLastSound > clipLength)
                 {
                     SetSoundSettings();
