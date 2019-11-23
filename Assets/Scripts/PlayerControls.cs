@@ -13,12 +13,22 @@ public class PlayerControls : Character
     // Attack 
     public int AttackSpeed;
     private float attackCountDown;
+
+    [SerializeField]
+    SoundEffect _hitEffect;
+
+    [SerializeField]
+    AudioSource _audioSource;
+
     // Start is called before the first frame update
 
     Animator anim;
 
     void Start()
     {
+        if (_audioSource == null)
+            _audioSource = GetComponent<AudioSource>();
+
         attackCountDown = AttackSpeed;
         anim = GetComponent<Animator>();
     }
@@ -76,7 +86,8 @@ public class PlayerControls : Character
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0)) && attackCountDown <= 0){
             attackCountDown = AttackSpeed;
             Attack();
-            GameObject.Find("SoundHit").GetComponent<SoundEffect>().PlaySound();
+            _audioSource.SetSoundSettingsAndPlayOneShot(_hitEffect);
+            Debug.Log("Hit");
         }
         if (attackCountDown > 0){
             attackCountDown -= Time.deltaTime;

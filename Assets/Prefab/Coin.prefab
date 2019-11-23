@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e79c0a82b38434b9eb3edb4aa977c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinSound: {fileID: 8300000, guid: d47fb595b34774a2c9fcb8d26eb47c8a, type: 3}
 --- !u!50 &4219983409670225861
 Rigidbody2D:
   serializedVersion: 4
