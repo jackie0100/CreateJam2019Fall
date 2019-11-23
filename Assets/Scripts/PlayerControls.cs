@@ -68,6 +68,7 @@ public class PlayerControls : MonoBehaviour
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0)) && AttackCountDown <= 0){
             AttackCountDown = AttackSpeed;
             Instantiate(AttackObject, GetAttackPostion(), GetAttackRotation());
+            GameObject.Find("SoundHit").GetComponent<SoundEffect>().PlaySound();
         }
         if (AttackCountDown > 0){
             AttackCountDown -= Time.deltaTime;
