@@ -113,8 +113,8 @@ MonoBehaviour:
   render: {fileID: 7409778233814076988}
   layerMask: 8
   AttackSpeed: 1
-  _hitEffect: {fileID: 0}
-  _audioSource: {fileID: 0}
+  _soundEffect: {fileID: 11400000, guid: 8421f82e9287440b38a39de79fd2a450, type: 2}
+  _audioSource: {fileID: 4098960857956177521}
 --- !u!58 &4469831413355444226
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -165,8 +165,8 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.492
-  m_Pitch: 1
+  m_Volume: 0.2
+  m_Pitch: 1.0160804
   Loop: 0
   Mute: 0
   Spatialize: 0

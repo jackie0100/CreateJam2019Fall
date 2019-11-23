@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94ca159385d5846c393932f39e327804, type: 3}
-  m_Name: EnemyHit
+  m_Name: Coin
   m_EditorClassIdentifier: 
   limit: 0
-  oneShot: 0
-  sound: []
+  oneShot: 1
+  sound:
+  - soundFile: {fileID: 8300000, guid: d47fb595b34774a2c9fcb8d26eb47c8a, type: 3}
+    pitchMin: 0.95
+    pitchMax: 1.05
+    volume: 0.2

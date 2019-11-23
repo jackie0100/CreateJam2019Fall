@@ -117636,6 +117636,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &1526287395 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4098960857956177521, guid: b72a1a23a033cda4fa293244a9e2620c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2078464628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1526287399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
@@ -120085,6 +120091,17 @@ PrefabInstance:
       propertyPath: MovementSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: _hitEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: 8421f82e9287440b38a39de79fd2a450,
+        type: 2}
+    - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1526287395}
     - target: {fileID: 4469831413355444226, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_Offset.y

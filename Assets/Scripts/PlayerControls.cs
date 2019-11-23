@@ -15,7 +15,7 @@ public class PlayerControls : Character
     private float attackCountDown;
 
     [SerializeField]
-    SoundEffect _hitEffect;
+    SoundEffect _soundEffect;
 
     [SerializeField]
     AudioSource _audioSource;
@@ -86,8 +86,7 @@ public class PlayerControls : Character
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0)) && attackCountDown <= 0){
             attackCountDown = AttackSpeed;
             Attack();
-            _audioSource.SetSoundSettingsAndPlayOneShot(_hitEffect);
-            Debug.Log("Hit");
+            _audioSource.SetSoundSettingsAndPlayOneShot(_soundEffect);
         }
         if (attackCountDown > 0){
             attackCountDown -= Time.deltaTime;
