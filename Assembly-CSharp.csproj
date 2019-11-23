@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E6603A49-F5C7-3D6C-235A-1946A0E0327F}</ProjectGuid>
+    <ProjectGuid>{DBE71EF4-BE6E-23D5-F029-0661395E84FF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,33 +45,35 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>     <Compile Include="Assets\RemoveAfterTime.cs" />
+     <Compile Include="Assets\Scenes\SideQuestNPC.cs" />
+     <Compile Include="Assets\Scripts\NPCBasic.cs" />
      <Compile Include="Assets\Scripts\PlayerControls.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Bjarke/The RPG of RPG&apos;s/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -53,7 +53,7 @@ public class PlayerControls : MonoBehaviour
             x += MovementSpeed * Time.deltaTime;
             newRotation = 3;
         }
-        Vector3 move = new Vector3(x,y,0);
+        Vector3 move = new Vector3(x,y,0).normalized;
         if (!Physics2D.Raycast(transform.position,move, MovementSpeed * Time.deltaTime * 2,1 << layerMask)){
             transform.position += move;
         } else {
