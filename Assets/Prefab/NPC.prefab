@@ -175,7 +175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '!'
+  m_Text: 
 --- !u!1 &7926794522357964536
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questIndicator: {fileID: 7926794521821570669}
   _targetTurnin: {fileID: 0}
+  _hasQuest: 1
 --- !u!50 &1922670892
 Rigidbody2D:
   serializedVersion: 4
