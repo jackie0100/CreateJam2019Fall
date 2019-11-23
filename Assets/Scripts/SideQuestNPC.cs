@@ -81,6 +81,7 @@ public class SideQuestNPC : MonoBehaviour
         {
             IsTurnin = false;
             HasQuest = true;
+            GetComponent<ThrowCoins>().ThrowSomeCoins();
         }
     }
 }
