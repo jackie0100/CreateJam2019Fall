@@ -482,7 +482,7 @@ PrefabInstance:
     - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
         type: 3}
       propertyPath: isFollowing
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
         type: 3}
@@ -498,12 +498,37 @@ PrefabInstance:
     - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
         type: 3}
       propertyPath: AttackOffSet
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
         type: 3}
       propertyPath: AttackSpeed
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
+        type: 3}
+      propertyPath: Health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
+        type: 3}
+      propertyPath: IsEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
+        type: 3}
+      propertyPath: SigtDistence
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
+        type: 3}
+      propertyPath: SightAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8295892344309441078, guid: 2a396662573727840a55d0800913f984,
+        type: 3}
+      propertyPath: currentRotation
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6701008569096340707, guid: 2a396662573727840a55d0800913f984,
         type: 3}
@@ -582,17 +607,17 @@ PrefabInstance:
     - target: {fileID: 5955443658149453861, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 10.65
       objectReference: {fileID: 0}
     - target: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.88
       objectReference: {fileID: 0}
     - target: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}

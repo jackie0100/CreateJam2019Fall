@@ -15,24 +15,59 @@ public class NPCBasic : Character
     // Attack
     public float AttackSpeed;
     private float attackCountDown;
+    public float SigtDistence;
+    public int SightAngle; 
     // Start is called before the first frame update
     void Start()
     {
+        spriteRenderer.sprite = Sprites[currentRotation];
     }
 
     
     // Update is called once per frame
     void Update()
     {
+        if (IsEnemy && !isFollowing){
+            SpotTarget();
+        }
         if (isFollowing){
             Movement ();
         }
     }
+    private void SpotTarget () {
+        LayerMask layerMask = 1 << 10;
+        if(Physics2D.OverlapCircle(transform.position, SigtDistence, layerMask)) {
+            if (IsWithInAngle()){
+                isFollowing = true;
+            }
+        } else {
+            
+        }
+    }
+    private bool IsWithInAngle () {
+        Vector3 vector = transform.position - Target.transform.position;
+         float angle = Mathf.Atan2(vector.y, vector.x) * 180 /Mathf.PI;
+         angle = (angle + 360) % 360;
+         float Langle = (currentRotation * 90 + SightAngle/2 + 360 - 90) % 360;
+         float Rangle = (currentRotation * 90 - SightAngle/2 + 360 - 90) % 360;
+         
+         if (Rangle > Langle){             
+             if (angle < Langle || angle > Rangle){
+                 return true;
+             }
+         } else {
+             if (angle < Langle && angle > Rangle){
+                 return true;
+             }
+         }
+         return false;
+    }
     private void Movement () {        
         if (Vector3.Distance(transform.position, Target.transform.position) > AttackDistence){  
             attackCountDown = AttackSpeed;          
-            GetComponent<Rigidbody2D>().velocity = AngleToTarget () * MovementSpeed;
+            
             Rotate ();
+            GetComponent<Rigidbody2D>().velocity = AngleToTarget () * MovementSpeed;
         } else {
             Attacking ();
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
@@ -53,14 +88,14 @@ public class NPCBasic : Character
             currentRotation = 3;
         } else if (rotation.x < -0.5){
             spriteRenderer.sprite = Sprites[2];
-            currentRotation = 3;
+            currentRotation = 2;
 
         } else if (rotation.y > 0){
             spriteRenderer.sprite = Sprites[0];
-            currentRotation = 3;
+            currentRotation = 0;
         } else {
             spriteRenderer.sprite = Sprites[1];
-            currentRotation = 3;
+            currentRotation = 1;
         }
     }
 
