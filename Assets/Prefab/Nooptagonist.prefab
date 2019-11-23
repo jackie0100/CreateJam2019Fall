@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7409778233814076988}
   - component: {fileID: 8287326089497440174}
   - component: {fileID: 4469831413355444226}
+  - component: {fileID: 762274300}
   m_Layer: 0
   m_Name: Nooptagonist
   m_TagString: Untagged
@@ -94,13 +95,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4822f587d08016f44866ccc80623e9e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 10
+  MovementSpeed: 0.1
   Sprites:
   - {fileID: 21300000, guid: 5ced2f5d62dcb5b4e8cff98e44a58495, type: 3}
   - {fileID: 21300000, guid: bd84ea877237b4c49b162c46fc400bd5, type: 3}
   - {fileID: 21300000, guid: 1b6261bebe563d147bdc361c2f181b2f, type: 3}
   - {fileID: 21300000, guid: bc3d20b6b0ebcb843b137b0b5df26607, type: 3}
   render: {fileID: 7409778233814076988}
+  layerMask: 8
   AttackObject: {fileID: 5079357758745041691, guid: 87921a6f54950d14195cf97aba983934,
     type: 3}
   Damage: 0
@@ -124,3 +126,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
+--- !u!50 &762274300
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955443658149453861}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

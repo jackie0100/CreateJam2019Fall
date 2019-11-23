@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     // Movement
-    public int MovementSpeed; 
+    public float MovementSpeed; 
     public List<Sprite> Sprites;
     private int currentRotation;
     private int newRotation;
@@ -38,24 +38,24 @@ public class PlayerControls : MonoBehaviour
     private void Movement () {
         float x = 0, y = 0;
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
-            y += MovementSpeed * Time.deltaTime;
+            y += MovementSpeed;
             newRotation = 0;
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)){
-            y += -MovementSpeed * Time.deltaTime;
+            y += -MovementSpeed;
             newRotation = 1;
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
-            x += -MovementSpeed * Time.deltaTime;           
+            x += -MovementSpeed;           
             newRotation = 2;
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
-            x += MovementSpeed * Time.deltaTime;
+            x += MovementSpeed;
             newRotation = 3;
         }
         Vector3 move = new Vector3(x,y,0).normalized;
         if (!Physics2D.Raycast(transform.position,move, MovementSpeed * Time.deltaTime * 2,1 << layerMask)){
-            transform.position += move;
+            GetComponent<Rigidbody2D>().velocity = move.normalized * MovementSpeed;
         } else {
             print("collide");
         }
