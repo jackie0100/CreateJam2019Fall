@@ -72,7 +72,5 @@ public class SoundEffect: MonoBehaviour
 
         audioSource.pitch = Random.Range(min, max);
         audioSource.volume = sound[selectedFile].volume;
-
-        Debug.Log(Random.Range(min, max));
     }
 }
