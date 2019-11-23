@@ -44,10 +44,12 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <ItemGroup>     <Compile Include="Assets\RemoveAfterTime.cs" />
-     <Compile Include="Assets\Scenes\SideQuestNPC.cs" />
+  <ItemGroup>     <Compile Include="Assets\Attack.cs" />
+     <Compile Include="Assets\RemoveAfterTime.cs" />
+     <Compile Include="Assets\Scripts\Character.cs" />
      <Compile Include="Assets\Scripts\NPCBasic.cs" />
      <Compile Include="Assets\Scripts\PlayerControls.cs" />
+     <Compile Include="Assets\Scripts\SideQuestNPC.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Bjarke/Documents/UnityProjects/CreateJam2019Fall/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
