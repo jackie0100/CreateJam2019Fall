@@ -14,9 +14,13 @@ public class PlayerControls : Character
     public int AttackSpeed;
     private float attackCountDown;
     // Start is called before the first frame update
+
+    Animator anim;
+
     void Start()
     {
         attackCountDown = AttackSpeed;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,22 +39,31 @@ public class PlayerControls : Character
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
             y += MovementSpeed;
             newRotation = 0;
+            anim.SetInteger("Direction", 0);
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)){
             y += -MovementSpeed;
             newRotation = 1;
+            anim.SetInteger("Direction", 1);
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
             x += -MovementSpeed;           
             newRotation = 2;
+            anim.SetInteger("Direction", 2);
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
             x += MovementSpeed;
             newRotation = 3;
+            anim.SetInteger("Direction", 3);
         }
         Vector3 move = new Vector3(x,y,0).normalized;
+        if (x == 0 && y == 0)
+        {
+            anim.SetInteger("Direction", -1);
+        }
         if (!Physics2D.Raycast(transform.position,move, MovementSpeed * Time.deltaTime * 2,1 << layerMask)){
             GetComponent<Rigidbody2D>().velocity = move * MovementSpeed;
+
         } else {
             print("collide");
         }
