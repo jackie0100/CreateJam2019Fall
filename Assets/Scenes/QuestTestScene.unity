@@ -293,6 +293,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
+        type: 3}
+      propertyPath: _targetTurnin
+      value: 
+      objectReference: {fileID: 1408510870}
+    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
+        type: 3}
+      propertyPath: _hasQuest
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7926794522357964533, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -348,16 +358,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
-        type: 3}
-      propertyPath: _targetTurnin
-      value: 
-      objectReference: {fileID: 1408510870}
-    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
-        type: 3}
-      propertyPath: _hasQuest
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7926794521707193402, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_Camera
@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 5955443658149453861, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_Name
-      value: Nooptagonist
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
@@ -458,6 +458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
+        type: 3}
+      propertyPath: _targetTurnin
+      value: 
+      objectReference: {fileID: 940800791}
     - target: {fileID: 7926794522357964533, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -513,11 +518,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
-        type: 3}
-      propertyPath: _targetTurnin
-      value: 
-      objectReference: {fileID: 940800791}
     - target: {fileID: 7926794521707193402, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_Camera
