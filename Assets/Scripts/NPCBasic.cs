@@ -11,16 +11,21 @@ public class NPCBasic : Character
     public int MovementSpeed;
     public float AttackDistence;
     public GameObject Target;
-    public SpriteRenderer spriteRenderer;
+   // public SpriteRenderer spriteRenderer;
     // Attack
     public float AttackSpeed;
     private float attackCountDown;
     public float SigtDistence;
-    public int SightAngle; 
+    public int SightAngle;
+
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        spriteRenderer.sprite = Sprites[currentRotation];
+        //spriteRenderer.sprite = Sprites[currentRotation];
+        anim = GetComponentInChildren<Animator>();
+        anim.SetTrigger("Idle");
+
     }
 
     
@@ -37,8 +42,10 @@ public class NPCBasic : Character
     private void SpotTarget () {
         LayerMask layerMask = 1 << 10;
         if(Physics2D.OverlapCircle(transform.position, SigtDistence, layerMask)) {
+            print("Spotted!!");
             if (IsWithInAngle()){
                 isFollowing = true;
+                
             }
         } else {
             
@@ -71,6 +78,7 @@ public class NPCBasic : Character
         } else {
             Attacking ();
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            anim.SetTrigger("Attack");
         }
     }
     private void Attacking () {
@@ -84,19 +92,25 @@ public class NPCBasic : Character
     private void Rotate () {
         Vector3 rotation = Target.transform.position - transform.position;
         if (rotation.x > 0.5){
-            spriteRenderer.sprite = Sprites[3];
+            //spriteRenderer.sprite = Sprites[3];
             currentRotation = 3;
+           
         } else if (rotation.x < -0.5){
-            spriteRenderer.sprite = Sprites[2];
+            //spriteRenderer.sprite = Sprites[2];
             currentRotation = 2;
+           
 
         } else if (rotation.y > 0){
-            spriteRenderer.sprite = Sprites[0];
+            //spriteRenderer.sprite = Sprites[0];
             currentRotation = 0;
+           
         } else {
-            spriteRenderer.sprite = Sprites[1];
+            //spriteRenderer.sprite = Sprites[1];
             currentRotation = 1;
+            
+
         }
+        anim.SetInteger("Direction", currentRotation);
     }
 
     private Vector3 AngleToTarget () {
