@@ -9,8 +9,10 @@ public class SideQuestNPC : MonoBehaviour
     Text _questIndicator;
     [SerializeField]
     SideQuestNPC _targetTurnin;
-
+    [SerializeField]
+    bool _hasQuest;
     bool _isTurnin;
+
 
     public bool IsTurnin
     {
@@ -25,8 +27,33 @@ public class SideQuestNPC : MonoBehaviour
             {
                 _questIndicator.text = "?";
             }
+            else
+            {
+                _questIndicator.text = "";
+            }
             _isTurnin = value;
 
+        }
+    }
+
+    public bool HasQuest
+    {
+        get
+        {
+            return _hasQuest;
+        }
+
+        set
+        {
+            if (value)
+            {
+                _questIndicator.text = "!";
+            }
+            else
+            {
+                _questIndicator.text = "";
+            }
+            _hasQuest = value;
         }
     }
 
@@ -34,7 +61,7 @@ public class SideQuestNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        HasQuest = _hasQuest;
     }
 
     // Update is called once per frame
@@ -43,5 +70,17 @@ public class SideQuestNPC : MonoBehaviour
         
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player" && _hasQuest)
+        {
+            _targetTurnin.IsTurnin = true;
+            HasQuest = false;
+        }
+        if (collision.gameObject.tag == "Player" && _isTurnin)
+        {
+            IsTurnin = false;
+            HasQuest = true;
+        }
+    }
 }

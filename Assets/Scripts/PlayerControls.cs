@@ -63,6 +63,7 @@ public class PlayerControls : Character
         if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0)) && attackCountDown <= 0){
             attackCountDown = AttackSpeed;
             Attack();
+            GameObject.Find("SoundHit").GetComponent<SoundEffect>().PlaySound();
         }
         if (attackCountDown > 0){
             attackCountDown -= Time.deltaTime;
