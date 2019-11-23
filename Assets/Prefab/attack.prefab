@@ -90,7 +90,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5079357758745041691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01494bb88fd71da44a2443e826d3d820, type: 3}
+  m_Script: {fileID: 11500000, guid: 679e8c9ef27a10d4c9ec25ae6e38ac1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 1
+  Timer: 0.2

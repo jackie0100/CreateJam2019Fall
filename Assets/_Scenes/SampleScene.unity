@@ -120,6 +120,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &345107735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5955443658149453861, guid: b72a1a23a033cda4fa293244a9e2620c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8807471134027562276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &345107740
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345107735}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 577253949}
   - component: {fileID: 577253948}
+  - component: {fileID: 577253950}
   - component: {fileID: 577253947}
   m_Layer: 8
   m_Name: Tree
@@ -221,8 +249,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &577253947
-CircleCollider2D:
+--- !u!61 &577253947
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -235,8 +263,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.63, y: 0.63}
+    newSize: {x: 0.63, y: 0.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.315
+  m_Size: {x: 0.63, y: 0.63}
+  m_EdgeRadius: 0
 --- !u!212 &577253948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -300,6 +338,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &577253950
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577253946}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &5079357758842216764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -384,7 +443,7 @@ PrefabInstance:
     - target: {fileID: 5955443658149453861, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
@@ -444,7 +503,12 @@ PrefabInstance:
     - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: ObsticalMask
-      value: ob
+      value: Ob
+      objectReference: {fileID: 0}
+    - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: layerMask
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b72a1a23a033cda4fa293244a9e2620c, type: 3}
