@@ -11,6 +11,7 @@ public class TextboxHelper : MonoBehaviour
     Text _title;
     [SerializeField]
     Text _speak;
+    public bool CloseWithInput = true;
 
     public static TextboxHelper Instance { get; set; }
 
@@ -23,7 +24,7 @@ public class TextboxHelper : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && CloseWithInput)
         {
             if (OnTextboxContinue != null)
             {
