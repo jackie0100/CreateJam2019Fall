@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPCBasic : Character
 {
+    public SoundEffect _wolfSpotsPlayer;
+    public new AudioSource _audioSource;
     // Movement 
     public List<Sprite> Sprites;
     public bool IsEnemy;
@@ -11,7 +13,7 @@ public class NPCBasic : Character
     public int MovementSpeed;
     public float AttackDistence;
     public GameObject Target;
-   // public SpriteRenderer spriteRenderer;
+   // public SpriteRenderer spriteRenderer;dest
     // Attack
     public float AttackSpeed;
     private float attackCountDown;
@@ -44,9 +46,16 @@ public class NPCBasic : Character
             Movement ();
         }
     }
+
+    private bool playerIsSpotted;
     private void SpotTarget () {
         LayerMask layerMask = 1 << 10;
         if(Physics2D.OverlapCircle(transform.position, SigtDistence, layerMask)) {
+            if (playerIsSpotted == false)
+            {
+                _audioSource.SetSoundSettingsAndPlayOneShot(_wolfSpotsPlayer);
+                playerIsSpotted = true;
+            }
             print("Spotted!!");
             if (IsWithInAngle()){
                 isFollowing = true;
@@ -131,6 +140,8 @@ public class NPCBasic : Character
         return angle; 
     }
 
+    public SoundEffect _characterDies;
+
     public override void Death() {
         if (Coins > 0){
             for (int i = 0; i < Coins; i ++){
@@ -149,5 +160,9 @@ public class NPCBasic : Character
 
             }
         }
+
+        anim.SetTrigger("Death");
+
+        _audioSource.SetSoundSettingsAndPlayOneShot(_characterDies);
     }
 }

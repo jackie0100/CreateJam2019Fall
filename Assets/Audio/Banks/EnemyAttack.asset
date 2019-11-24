@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: EnemyAttack
   m_EditorClassIdentifier: 
   limit: 0
-  oneShot: 0
-  sound: []
+  oneShot: 1
+  sound:
+  - soundFile: {fileID: 8300000, guid: 5d05986bec2b4479eb408afa722cebac, type: 3}
+    pitchMin: 1
+    pitchMax: 1
+    volume: 0.55
