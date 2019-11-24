@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 954220452}
   - component: {fileID: 954220453}
   - component: {fileID: 4429784898712563867}
+  - component: {fileID: 236881350194024877}
   m_Layer: 0
   m_Name: attack
   m_TagString: Untagged
@@ -97,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679e8c9ef27a10d4c9ec25ae6e38ac1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 0.2
+  Timer: 0.5
 --- !u!114 &-7039373774149146417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +259,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &236881350194024877
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5079357758745041691}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8045160ccef403d43bbf5db8d66927e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
