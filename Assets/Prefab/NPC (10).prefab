@@ -127,9 +127,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9978f1b022b79ce41b72d027cc1ab394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _npcId: 0
   _questIndicator: {fileID: 2970215414764243703}
-  _targetTurnin: {fileID: 0}
   _hasQuest: 1
+  _quest: []
+  _isTurnin: 0
+  _allNpcs: []
+  _name: 
+  ActiveQuest: {fileID: 0}
 --- !u!50 &5132400088586374582
 Rigidbody2D:
   serializedVersion: 4
