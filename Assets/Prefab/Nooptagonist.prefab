@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 762274300}
   - component: {fileID: 4098960857956177521}
   - component: {fileID: 8931193756903372209}
-  - component: {fileID: 8345173617391141810}
   m_Layer: 10
   m_Name: Nooptagonist
   m_TagString: Player
@@ -168,7 +167,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.2
-  m_Pitch: 1.049398
+  m_Pitch: 1.038455
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -270,20 +269,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8345173617391141810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5955443658149453861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8132780a0a0502342883ca44f7edec99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Coins: 0
-  Loots: []
 --- !u!1 &9056259865942497793
 GameObject:
   m_ObjectHideFlags: 0
