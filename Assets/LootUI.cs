@@ -14,7 +14,7 @@ public class LootUI : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {        
         Popup.SetActive(true);
-        Popup.transform.GetChild(0).GetComponent<Text>().text = Loot.EquipLine;
+        Popup.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = Loot.EquipLine;
     }
 
     public void Set (CreateLoot loot, GameObject popup){

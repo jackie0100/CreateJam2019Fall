@@ -23,7 +23,14 @@ public class TextboxHelper : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            OnTextboxContinue?.Invoke();
+            if (OnTextboxContinue != null)
+            {
+                OnTextboxContinue?.Invoke();
+            }
+            else
+            {
+                Close();
+            }
         }
     }
 
