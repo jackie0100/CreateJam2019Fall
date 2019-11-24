@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ca159385d5846c393932f39e327804, type: 3}
+  m_Name: PlayerAttack
+  m_EditorClassIdentifier: 
+  limit: 0.01
+  oneShot: 1
+  sound:
+  - soundFile: {fileID: 8300000, guid: 1387799073ed043d087a1b1c2f85b1d0, type: 3}
+    pitchMin: 0.9
+    pitchMax: 1.2
+    volume: 0.5
+  - soundFile: {fileID: 8300000, guid: c9205d177d4994649a7517ec68671822, type: 3}
+    pitchMin: 0.9
+    pitchMax: 1.2
+    volume: 0.5
+  - soundFile: {fileID: 8300000, guid: 111eaf229a3764ff2ae1bf7fa740f372, type: 3}
+    pitchMin: 0.9
+    pitchMax: 1.2
+    volume: 0.5
+  - soundFile: {fileID: 8300000, guid: 1e1b89ebb26004e88867fe42cab8dc55, type: 3}
+    pitchMin: 0.9
+    pitchMax: 1.2
+    volume: 0.5
