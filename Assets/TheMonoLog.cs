@@ -18,9 +18,19 @@ public class TheMonoLog : MonoBehaviour
     public GameObject WinText;
     
     // Start is called before the first frame update
+
+    private AudioSource audioSource;
+    public AudioClip [] monologAudio;
+
+    public SoundEffect deathSound;
+    public AudioSource bossSoundSource;
+
+    public SoundEffect victoryMusic;
+    public AudioSource victoryMusicSource;
+
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
     string currentSentenct;
     // Update is called once per frame
@@ -51,6 +61,7 @@ public class TheMonoLog : MonoBehaviour
     }
     IEnumerator Fade() 
     {
+        audioSource.clip = monologAudio[CurrentMono];
         
         UpdatePopUp();
         print("Called");
@@ -61,8 +72,13 @@ public class TheMonoLog : MonoBehaviour
                 currentSentenct += word + " ";
                 word = "";                
                 UpdatePopUp();
+                audioSource.mute = true;
+                yield return new WaitForSeconds(.01f);
+                audioSource.mute = false;
+                audioSource.Play();
             } else {
                 word += Monologs[CurrentMono][i];
+                
             }
             yield return new WaitForSeconds(.05f);
         }
@@ -78,7 +94,10 @@ public class TheMonoLog : MonoBehaviour
 
     IEnumerator FadeWin() 
     {
-        
+        bossSoundSource.SetSoundSettingsAndPlayOneShot(deathSound);
+        victoryMusicSource.Stop();
+        victoryMusicSource.SetSoundSettingsAndPlayOneShot(victoryMusic);
+
         currentSentenct = "";
         UpdatePopUp();
         print("Won");
