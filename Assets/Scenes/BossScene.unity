@@ -630,17 +630,17 @@ PrefabInstance:
     - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 30.254978
+      value: -18.549992
       objectReference: {fileID: 0}
     - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 126.51004
+      value: 11.099982
       objectReference: {fileID: 0}
     - target: {fileID: 4184675992638920024, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.9900084
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4184675992638920024, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
@@ -785,6 +785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 571912511}
   - component: {fileID: 571912510}
+  - component: {fileID: 571912512}
   m_Layer: 0
   m_Name: EvilBoss
   m_TagString: Untagged
@@ -856,6 +857,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &571912512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571912509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce96b3f96116e6e42a4f66f7c3f0cabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &739618802
 GameObject:
   m_ObjectHideFlags: 0
