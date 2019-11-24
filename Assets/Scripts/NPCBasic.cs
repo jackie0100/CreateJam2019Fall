@@ -149,5 +149,7 @@ public class NPCBasic : Character
 
             }
         }
+
+        anim.SetTrigger("Death");
     }
 }

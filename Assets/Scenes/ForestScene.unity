@@ -11373,6 +11373,9 @@ MonoBehaviour:
   AttackSpeed: 1
   SigtDistence: 5
   SightAngle: 180
+  Coin: {fileID: 0}
+  Coins: 0
+  loots: []
 --- !u!4 &789114221
 Transform:
   m_ObjectHideFlags: 0
