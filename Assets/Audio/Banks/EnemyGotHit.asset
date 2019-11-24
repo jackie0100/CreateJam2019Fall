@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: EnemyGotHit
   m_EditorClassIdentifier: 
   limit: 0
-  oneShot: 0
-  sound: []
+  oneShot: 1
+  sound:
+  - soundFile: {fileID: 8300000, guid: 38541da702c6740699e23722ae73bc70, type: 3}
+    pitchMin: 1
+    pitchMax: 1
+    volume: 0.6

@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limit: 0
   oneShot: 0
-  sound: []
+  sound:
+  - soundFile: {fileID: 8300000, guid: ca19d606ef2d147c2b2da4971b0f56c3, type: 3}
+    pitchMin: 1
+    pitchMax: 1
+    volume: 0.4

@@ -15,19 +15,7 @@ MonoBehaviour:
   limit: 0.01
   oneShot: 1
   sound:
-  - soundFile: {fileID: 8300000, guid: 1387799073ed043d087a1b1c2f85b1d0, type: 3}
-    pitchMin: 0.9
-    pitchMax: 1.2
-    volume: 0.5
   - soundFile: {fileID: 8300000, guid: c9205d177d4994649a7517ec68671822, type: 3}
-    pitchMin: 0.9
-    pitchMax: 1.2
-    volume: 0.5
-  - soundFile: {fileID: 8300000, guid: 111eaf229a3764ff2ae1bf7fa740f372, type: 3}
-    pitchMin: 0.9
-    pitchMax: 1.2
-    volume: 0.5
-  - soundFile: {fileID: 8300000, guid: 1e1b89ebb26004e88867fe42cab8dc55, type: 3}
     pitchMin: 0.9
     pitchMax: 1.2
     volume: 0.5

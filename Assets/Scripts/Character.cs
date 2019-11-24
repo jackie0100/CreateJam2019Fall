@@ -58,7 +58,6 @@ public class Character : MonoBehaviour
         return  vector;
     }
     public virtual  void Death(){
-
     }
     private Quaternion GetAttackRotation() {
         Quaternion quaternion = new Quaternion();

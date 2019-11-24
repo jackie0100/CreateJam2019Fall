@@ -18,7 +18,7 @@ public class PlayerControls : Character
     SoundEffect _soundEffect;
 
     [SerializeField]
-    AudioSource _audioSource;
+    new AudioSource _audioSource;
 
     // Start is called before the first frame update
 
