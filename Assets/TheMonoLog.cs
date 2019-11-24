@@ -14,6 +14,9 @@ public class TheMonoLog : MonoBehaviour
     public float WaitUntilMono;
     public bool isTalking = false;
     public int CurrentMono = 0;
+    public bool hasWon = false;
+    public GameObject WinText;
+    
     // Start is called before the first frame update
 
     public AudioSource audioSource;
@@ -31,7 +34,7 @@ public class TheMonoLog : MonoBehaviour
         if (WaitUntilMono <= 0){    
             if (!PopUp.activeSelf){                
             PopUp.SetActive(true);      
-            if (!isTalking && CurrentMono < Monologs.Count){
+            if ((!isTalking && CurrentMono < Monologs.Count) && !hasWon){
                 isTalking = true;
                 
                 StartCoroutine("Fade"); 
@@ -40,9 +43,16 @@ public class TheMonoLog : MonoBehaviour
         } else {
             WaitUntilMono -= Time.deltaTime;
         }
-        print (isTalking);
     }
-
+    public void win () {        
+        if (!hasWon){
+            hasWon = true;
+            StopAllCoroutines();
+            CurrentMono = 0;
+            isTalking = true;
+            StartCoroutine("FadeWin"); 
+        }
+    }
     IEnumerator Fade() 
     {
         audioSource.clip = monologAudio[CurrentMono];
@@ -75,6 +85,35 @@ public class TheMonoLog : MonoBehaviour
         currentSentenct = "";
         StopCoroutine(Fade());
     }
+
+    IEnumerator FadeWin() 
+    {
+        
+        currentSentenct = "";
+        UpdatePopUp();
+        print("Won");
+        string word = "";
+        for (int i = 0; i < Winolog[CurrentMono].Length; i++) 
+        {
+            if (Winolog[CurrentMono][i] == ' '){
+                currentSentenct += word + " ";
+                word = "";                
+                UpdatePopUp();
+            } else {
+                word += Winolog[CurrentMono][i];
+            }
+            yield return new WaitForSeconds(.05f);
+        }
+        currentSentenct += word;       
+        UpdatePopUp();
+        isTalking = false;
+        CurrentMono += 1;
+        
+        yield return new WaitForSeconds(.5f);
+        WinText.SetActive(true);
+        StopCoroutine(FadeWin());
+    }
+
     private void UpdatePopUp(){        
         PopUp.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = currentSentenct;
     }

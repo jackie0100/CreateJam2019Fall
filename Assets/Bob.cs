@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bob : MonoBehaviour
+public class Bob : Character
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public TheMonoLog monolog;
+    public override void Death(){
+        monolog.win();
     }
 }
