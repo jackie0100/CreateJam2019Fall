@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e71015b7eb665e408831018c244f025, type: 3}
   m_Name: HelgirsHeavyHardendHarness
   m_EditorClassIdentifier: 
-  Name: 
-  EquipLine: 
+  Name: Helgir's Heavy Hardend Harness
+  EquipLine: + 120 Armor, Immunity to cold, 70 to char against Male NPC's .. but i
+    think am gonna skip this one
   SellLine: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 327005a5403b15f409e9ef947f400872, type: 3}

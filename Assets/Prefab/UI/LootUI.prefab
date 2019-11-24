@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 211.2, y: 338.48}
-  m_SizeDelta: {x: 313.4, y: 86}
+  m_SizeDelta: {x: 324.89, y: 86}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7796638788724796251
 CanvasRenderer:
@@ -88,8 +88,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1a38fb93662054dbae160c44ef8172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Loot: {fileID: 0}
   Name: {fileID: 7346273580414088182}
   Image: {fileID: 2984192061968321204}
+  Popup: {fileID: 0}
 --- !u!1 &1091433048866348511
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +199,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 48.53, y: -0.1000061}
-  m_SizeDelta: {x: -98.06, y: -4.5}
+  m_AnchoredPosition: {x: 45.190002, y: -1.1400026}
+  m_SizeDelta: {x: -104.74, y: -12.859995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5663080384203046544
 CanvasRenderer:
@@ -227,7 +229,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a26d1772b88ca2f4ead1e13e24bf2ae3, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1

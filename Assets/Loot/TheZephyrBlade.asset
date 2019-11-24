@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e71015b7eb665e408831018c244f025, type: 3}
   m_Name: TheZephyrBlade
   m_EditorClassIdentifier: 
-  Name: 
-  EquipLine: 
+  Name: The Zephyr Blade
+  EquipLine: A stick, a clup, a quarterstaff ... completely useless, becouse you wanted
+    proficiency in the playing the lute, instead of being able to use the simplest
+    of weapons
   SellLine: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 5863111414348343542, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}

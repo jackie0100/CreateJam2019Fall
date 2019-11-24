@@ -32,6 +32,7 @@ public class NPCBasic : Character
         //spriteRenderer.sprite = Sprites[currentRotation];
         anim = GetComponentInChildren<Animator>();
         anim.SetTrigger("Idle");
+        
 
     }
 

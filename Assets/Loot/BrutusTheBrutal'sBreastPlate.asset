@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e71015b7eb665e408831018c244f025, type: 3}
   m_Name: BrutusTheBrutal'sBreastPlate
   m_EditorClassIdentifier: 
-  Name: 
-  EquipLine: 
+  Name: Brutus The Brutal's Breastplate
+  EquipLine: +2 Armor!! I Am not giving up our Linen shirt of +5, for this piece of
+    shit
   SellLine: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 05d7263b66f28e84a8a47324449ca871, type: 3}
