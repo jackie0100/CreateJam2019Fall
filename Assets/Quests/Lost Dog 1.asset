@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4e6c4f8fc6cda048ae2625982146461, type: 3}
-  m_Name: Followup Quest 2
+  m_Name: Lost Dog 1
   m_EditorClassIdentifier: 
-  _questText: Follow up quest b
-  _completedText: Follow up quest b completed
-  _startAtNpcId: 4
-  _turninNpcId: 9
-  _leadToQuest: []
+  _questText: Hi my dog doggy doggison has gone mission, chould you find him ... i'll
+    might give you a kiss .. but only might, you are kind of uig
+  _completedText: 'Voff voff '
+  _startAtNpcId: 1
+  _turninNpcId: 4
+  _leadToQuest:
+  - {fileID: 11400000, guid: 310f5af93512bd14ebff8765dd64cc90, type: 2}
   _rewards: []

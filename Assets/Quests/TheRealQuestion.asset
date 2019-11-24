@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4e6c4f8fc6cda048ae2625982146461, type: 3}
-  m_Name: NiceDayForFish
+  m_Name: TheRealQuestion
   m_EditorClassIdentifier: 
-  _questText: 'Nice day for fishing ain''t it ? '
-  _completedText: Uhu
-  _startAtNpcId: 9
-  _turninNpcId: 9
+  _questText: As a said go tell Hynter to still a stick op his bum
+  _completedText: Hmmm i think am gonna skip, like a respekt that sticking stiks op
+    his bum is part his baby orc cultre, but just sound uncomfortable
+  _startAtNpcId: 0
+  _turninNpcId: 0
   _leadToQuest:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: d2913b82cb60c5c48bb5bdd4342d5f5d, type: 2}
   _rewards: []

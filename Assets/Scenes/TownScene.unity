@@ -17906,7 +17906,7 @@ PrefabInstance:
     - target: {fileID: 7926794522357964536, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_Name
-      value: Saint Nicleja
+      value: 0 Saint Nicleja
       objectReference: {fileID: 0}
     - target: {fileID: 7926794522357964533, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
@@ -135509,7 +135509,7 @@ PrefabInstance:
     - target: {fileID: 7216090749221451655, guid: b35f805bb8b0eba43a89f9e387e80ad9,
         type: 3}
       propertyPath: m_Name
-      value: NPC (6)
+      value: 6 Hynter Roger
       objectReference: {fileID: 0}
     - target: {fileID: 7216090749221451658, guid: b35f805bb8b0eba43a89f9e387e80ad9,
         type: 3}
@@ -135639,7 +135639,7 @@ PrefabInstance:
     - target: {fileID: 7216090749221451659, guid: b35f805bb8b0eba43a89f9e387e80ad9,
         type: 3}
       propertyPath: _name
-      value: Hunter
+      value: Hynter Roger
       objectReference: {fileID: 0}
     - target: {fileID: 7216090749221451659, guid: b35f805bb8b0eba43a89f9e387e80ad9,
         type: 3}
@@ -135682,7 +135682,7 @@ PrefabInstance:
     - target: {fileID: 7050843371037862646, guid: 060adb87e6b6b9e4f972da6b70018b29,
         type: 3}
       propertyPath: m_Name
-      value: NPC (7)
+      value: 7 Jens the Human
       objectReference: {fileID: 0}
     - target: {fileID: 7050843371037862651, guid: 060adb87e6b6b9e4f972da6b70018b29,
         type: 3}
@@ -135812,7 +135812,7 @@ PrefabInstance:
     - target: {fileID: 7050843371037862650, guid: 060adb87e6b6b9e4f972da6b70018b29,
         type: 3}
       propertyPath: _name
-      value: Mystery Person
+      value: Jens the Human
       objectReference: {fileID: 0}
     - target: {fileID: 7050843371037862650, guid: 060adb87e6b6b9e4f972da6b70018b29,
         type: 3}
@@ -135855,7 +135855,7 @@ PrefabInstance:
     - target: {fileID: 8627558681340974487, guid: adc5fb941fa4737418ba7e09af020589,
         type: 3}
       propertyPath: m_Name
-      value: NPC (4)
+      value: 4 Doggy
       objectReference: {fileID: 0}
     - target: {fileID: 8627558681340974490, guid: adc5fb941fa4737418ba7e09af020589,
         type: 3}
@@ -135985,7 +135985,7 @@ PrefabInstance:
     - target: {fileID: 8627558681340974491, guid: adc5fb941fa4737418ba7e09af020589,
         type: 3}
       propertyPath: _name
-      value: Tiny Popper
+      value: Doggy
       objectReference: {fileID: 0}
     - target: {fileID: 8627558681340974491, guid: adc5fb941fa4737418ba7e09af020589,
         type: 3}
@@ -136028,7 +136028,7 @@ PrefabInstance:
     - target: {fileID: 5013449459352494111, guid: 62b5ee4aa060ec044b315627f0b04a8a,
         type: 3}
       propertyPath: m_Name
-      value: NPC (3)
+      value: 3 I'm not a baby Orc
       objectReference: {fileID: 0}
     - target: {fileID: 5013449459352494098, guid: 62b5ee4aa060ec044b315627f0b04a8a,
         type: 3}
@@ -136158,7 +136158,7 @@ PrefabInstance:
     - target: {fileID: 5013449459352494099, guid: 62b5ee4aa060ec044b315627f0b04a8a,
         type: 3}
       propertyPath: _name
-      value: The Goblin
+      value: I'm not a baby Orc
       objectReference: {fileID: 0}
     - target: {fileID: 5013449459352494099, guid: 62b5ee4aa060ec044b315627f0b04a8a,
         type: 3}
@@ -136201,7 +136201,7 @@ PrefabInstance:
     - target: {fileID: 3378624248094821424, guid: f6a35aa2f8a91204ebc9addf987a5591,
         type: 3}
       propertyPath: m_Name
-      value: NPC (8)
+      value: 8 Minda du buisnas
       objectReference: {fileID: 0}
     - target: {fileID: 3378624248094821437, guid: f6a35aa2f8a91204ebc9addf987a5591,
         type: 3}
@@ -136331,7 +136331,7 @@ PrefabInstance:
     - target: {fileID: 3378624248094821436, guid: f6a35aa2f8a91204ebc9addf987a5591,
         type: 3}
       propertyPath: _name
-      value: Secret Assassin
+      value: Minda du buisnas
       objectReference: {fileID: 0}
     - target: {fileID: 3378624248094821436, guid: f6a35aa2f8a91204ebc9addf987a5591,
         type: 3}
@@ -136374,7 +136374,7 @@ PrefabInstance:
     - target: {fileID: 2970215414227726946, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
         type: 3}
       propertyPath: m_Name
-      value: Lumre Fot
+      value: 10 Lumre Fot
       objectReference: {fileID: 0}
     - target: {fileID: 2970215414227726959, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
         type: 3}
@@ -136563,7 +136563,7 @@ PrefabInstance:
     - target: {fileID: 2676928888555748874, guid: 24ef234d0d384154598bc0e9f60944ba,
         type: 3}
       propertyPath: m_Name
-      value: NPC (11)
+      value: 11 Bit  Char
       objectReference: {fileID: 0}
     - target: {fileID: 2676928888555748871, guid: 24ef234d0d384154598bc0e9f60944ba,
         type: 3}
@@ -136693,7 +136693,7 @@ PrefabInstance:
     - target: {fileID: 2676928888555748870, guid: 24ef234d0d384154598bc0e9f60944ba,
         type: 3}
       propertyPath: _name
-      value: Mercenary
+      value: Bit  Char
       objectReference: {fileID: 0}
     - target: {fileID: 2676928888555748870, guid: 24ef234d0d384154598bc0e9f60944ba,
         type: 3}
@@ -136736,7 +136736,7 @@ PrefabInstance:
     - target: {fileID: 4165180691062970003, guid: 31b41e4efc722b34598d4b11b5413bb3,
         type: 3}
       propertyPath: m_Name
-      value: NPC (9)
+      value: 9 Rowian the fisher
       objectReference: {fileID: 0}
     - target: {fileID: 4165180691062970014, guid: 31b41e4efc722b34598d4b11b5413bb3,
         type: 3}
@@ -136800,8 +136800,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4165180691062970015, guid: 31b41e4efc722b34598d4b11b5413bb3,
         type: 3}
+      propertyPath: _quest.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165180691062970015, guid: 31b41e4efc722b34598d4b11b5413bb3,
+        type: 3}
       propertyPath: _hasQuest
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4165180691062970015, guid: 31b41e4efc722b34598d4b11b5413bb3,
         type: 3}
@@ -136874,6 +136879,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
         type: 2}
+    - target: {fileID: 4165180691062970015, guid: 31b41e4efc722b34598d4b11b5413bb3,
+        type: 3}
+      propertyPath: _quest.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3b052e6287e6ea240ba4eb2f068fbc22,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 4165180691062970012, guid: 31b41e4efc722b34598d4b11b5413bb3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31b41e4efc722b34598d4b11b5413bb3, type: 3}
@@ -136909,7 +136920,7 @@ PrefabInstance:
     - target: {fileID: 759069486860214741, guid: eb9df6644acacc9469b3edbd963e51ac,
         type: 3}
       propertyPath: m_Name
-      value: NPC (1)
+      value: 1 Nobile Duckie
       objectReference: {fileID: 0}
     - target: {fileID: 8099874197333709371, guid: eb9df6644acacc9469b3edbd963e51ac,
         type: 3}
@@ -136984,7 +136995,7 @@ PrefabInstance:
     - target: {fileID: 8099874197333709371, guid: eb9df6644acacc9469b3edbd963e51ac,
         type: 3}
       propertyPath: _name
-      value: Sandra
+      value: Nobile Duckie
       objectReference: {fileID: 0}
     - target: {fileID: 8099874197333709371, guid: eb9df6644acacc9469b3edbd963e51ac,
         type: 3}
@@ -137082,7 +137093,7 @@ PrefabInstance:
     - target: {fileID: 3477869135197999229, guid: 2a6400537f6e2194cb2d2de767be67d6,
         type: 3}
       propertyPath: m_Name
-      value: NPC (5)
+      value: 5 Lady Les Leid
       objectReference: {fileID: 0}
     - target: {fileID: 3477869135197999216, guid: 2a6400537f6e2194cb2d2de767be67d6,
         type: 3}
@@ -137212,7 +137223,7 @@ PrefabInstance:
     - target: {fileID: 3477869135197999217, guid: 2a6400537f6e2194cb2d2de767be67d6,
         type: 3}
       propertyPath: _name
-      value: The Dryad
+      value: Lady Les Leid
       objectReference: {fileID: 0}
     - target: {fileID: 3477869135197999217, guid: 2a6400537f6e2194cb2d2de767be67d6,
         type: 3}
@@ -137255,7 +137266,7 @@ PrefabInstance:
     - target: {fileID: 745762927795940400, guid: aff1b705d442cfb49889d6f46f397d86,
         type: 3}
       propertyPath: m_Name
-      value: NPC (2)
+      value: 2 Hulder Hudde Huris Knight
       objectReference: {fileID: 0}
     - target: {fileID: 745762927795940413, guid: aff1b705d442cfb49889d6f46f397d86,
         type: 3}
@@ -137385,7 +137396,7 @@ PrefabInstance:
     - target: {fileID: 745762927795940412, guid: aff1b705d442cfb49889d6f46f397d86,
         type: 3}
       propertyPath: _name
-      value: Weird Armoured Person
+      value: Hulder Hudde Huris Knight
       objectReference: {fileID: 0}
     - target: {fileID: 745762927795940412, guid: aff1b705d442cfb49889d6f46f397d86,
         type: 3}
