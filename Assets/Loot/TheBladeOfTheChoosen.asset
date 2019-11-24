@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TheBladeOfTheChoosen
   m_EditorClassIdentifier: 
   Name: Blade of the Choosen
-  EquipLine: Legens say the wielder of this powerfull artifact can obliterate in one
-    fell swoop. unfortunately you are not the choosen one
+  EquipLine: Legends say the wielder of this powerfull artifact can obliterate in
+    one fell swoop. Unfortunately you are not the chosen one.
   SellLine: 
   Icon: {fileID: -5694993301688967865, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}

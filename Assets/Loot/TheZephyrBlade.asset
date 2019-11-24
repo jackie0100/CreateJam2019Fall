@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TheZephyrBlade
   m_EditorClassIdentifier: 
   Name: The Zephyr Blade
-  EquipLine: A stick, a clup, a quarterstaff ... completely useless, becouse you wanted
-    proficiency in the playing the lute, instead of being able to use the simplest
-    of weapons
+  EquipLine: A stick, a club, a quarterstaff ... completely useless, because you wanted
+    proficiency in playing the lute, instead of being able to use the simplest of
+    weapons
   SellLine: 
   Icon: {fileID: 5863111414348343542, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}
