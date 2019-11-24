@@ -20,6 +20,9 @@ public class SpawnItemsUI : MonoBehaviour
         
     }
     void OnEnable() {
+        if (Player ==null) {
+            Player = FindObjectOfType<PlayerControls>().gameObject;
+        }
         backPack = Player.GetComponent<BackPack>();
         NumberOfLoot = backPack.Loots.Count;
         for (int i = 0; i < NumberOfLoot; i++){
