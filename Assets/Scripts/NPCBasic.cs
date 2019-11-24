@@ -21,6 +21,7 @@ public class NPCBasic : Character
     public GameObject Coin;
     public int Coins;
     public List<GameObject> loots = new List<GameObject>();
+    private  bool isAttacking = false;
 
     Animator anim;
     // Start is called before the first frame update
@@ -74,7 +75,7 @@ public class NPCBasic : Character
          return false;
     }
     private void Movement () {        
-        if (Vector3.Distance(transform.position, Target.transform.position) > AttackDistence){  
+        if (Vector3.Distance(transform.position, Target.transform.position) > AttackDistence && !isAttacking){  
             attackCountDown = AttackSpeed;          
             
             Rotate ();
@@ -82,39 +83,45 @@ public class NPCBasic : Character
         } else {
             Attacking ();
             GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-            anim.SetTrigger("Attack");
         }
     }
     private void Attacking () {
         if (attackCountDown <= 0){            
             attackCountDown = AttackSpeed;
             Attack();
+            isAttacking = false;
         } else {
+            if (!isAttacking){                
+                anim.SetTrigger("Attack");
+            }
+            isAttacking = true;
             attackCountDown -= Time.deltaTime;
         }
     }
     private void Rotate () {
-        Vector3 rotation = Target.transform.position - transform.position;
-        if (rotation.x > 0.5){
+        Vector3 rotation = (Target.transform.position - transform.position).normalized;
+        int newcurrentRotation;
+        if (rotation.x > 0.2){
             //spriteRenderer.sprite = Sprites[3];
-            currentRotation = 3;
+            newcurrentRotation = 3;
            
-        } else if (rotation.x < -0.5){
+        } else if (rotation.x < -0.2){
             //spriteRenderer.sprite = Sprites[2];
-            currentRotation = 2;
-           
+            newcurrentRotation = 2;      
 
         } else if (rotation.y > 0){
             //spriteRenderer.sprite = Sprites[0];
-            currentRotation = 0;
+            newcurrentRotation = 0;
            
         } else {
             //spriteRenderer.sprite = Sprites[1];
-            currentRotation = 1;
-            
+            newcurrentRotation = 1;            
 
         }
-        anim.SetInteger("Direction", currentRotation);
+        if (newcurrentRotation != currentRotation){
+            currentRotation = newcurrentRotation;
+            anim.SetInteger("Direction", currentRotation);
+        }
     }
 
     private Vector3 AngleToTarget () {
