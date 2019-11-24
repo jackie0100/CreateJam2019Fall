@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questText: 'Nice day for fishing ain''t it ? '
   _completedText: Uhu
-  _startAtNpcId: 5
-  _turninNpcId: 5
+  _startAtNpcId: 9
+  _turninNpcId: 9
   _leadToQuest:
   - {fileID: 11400000}
   _rewards: []
