@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e71015b7eb665e408831018c244f025, type: 3}
   m_Name: VoidDarkOrbofTheNether
   m_EditorClassIdentifier: 
-  Name: 
-  EquipLine: 
+  Name: Void Dark Orb of the Nether
+  EquipLine: Sorry this item is only useble by Warlocks ... who worship the evil old
+    ones ... and born under the blood moon ... and left handed
   SellLine: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -1996417610709492555, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}
