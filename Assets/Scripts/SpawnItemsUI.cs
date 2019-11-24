@@ -11,7 +11,6 @@ public class SpawnItemsUI : MonoBehaviour
     public GameObject Player;
 
     public GameObject PopUp;
-    private BackPack backPack;
     private List<GameObject> children = new List<GameObject>();
     
     // Start is called before the first frame update
@@ -23,8 +22,7 @@ public class SpawnItemsUI : MonoBehaviour
         if (Player ==null) {
             Player = FindObjectOfType<PlayerControls>().gameObject;
         }
-        backPack = Player.GetComponent<BackPack>();
-        NumberOfLoot = backPack.Loots.Count;
+        NumberOfLoot = BackPack.Loots.Count;
         for (int i = 0; i < NumberOfLoot; i++){
             SpawnItem (i);
         }
@@ -46,7 +44,7 @@ public class SpawnItemsUI : MonoBehaviour
         item.transform.SetParent(this.gameObject.transform);
         RectTransform transform = item.GetComponent<RectTransform>();
         LootUI script = item.GetComponent<LootUI>();
-        script.Set(backPack.Loots[number], PopUp);
+        script.Set(BackPack.Loots[number], PopUp);
         transform.localPosition = new Vector3 (0, -Hight * number, 0);
     }
     // Update is called once per frame

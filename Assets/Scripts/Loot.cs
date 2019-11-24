@@ -9,7 +9,7 @@ public class Loot : Item
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<BackPack>().Loots.Add(loot);
+            BackPack.Loots.Add(loot);
             Destroy(this.gameObject);
         }
     }

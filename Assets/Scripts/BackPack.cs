@@ -2,23 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackPack : MonoBehaviour
+static public class BackPack
 {
-    public int Coins = 0;
-    public List<CreateLoot> Loots;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void AddLoot (CreateLoot loot) {
+    static public int Coins = 0;
+    static public List<CreateLoot> Loots = new List<CreateLoot>();
+    static public void AddLoot (CreateLoot loot) {
         Loots.Add(loot);
     }
 }
