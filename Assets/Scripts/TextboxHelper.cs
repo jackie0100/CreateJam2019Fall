@@ -14,7 +14,7 @@ public class TextboxHelper : MonoBehaviour
 
     public static TextboxHelper Instance { get; set; }
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
 
