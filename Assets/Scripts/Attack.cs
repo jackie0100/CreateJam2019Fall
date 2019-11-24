@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+    public SoundEffect _wolfIsAttacked;
+    public AudioSource _auidoSource;
+
     public int Damage; 
     public GameObject Owner;
     // Start is called before the first frame update
@@ -25,6 +28,8 @@ public class Attack : MonoBehaviour
         {
             other.GetComponent<Character>().TakeDamage(Damage);
             print("npc trigger");
+
+            _auidoSource.SetSoundSettingsAndPlayOneShot(_wolfIsAttacked);
         }
     }
 }
