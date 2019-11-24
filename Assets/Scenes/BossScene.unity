@@ -394,7 +394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161045410
 GameObject:
@@ -501,7 +501,7 @@ Transform:
   m_LocalScale: {x: 2.75, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &278577478
 GameObject:
@@ -588,32 +588,32 @@ MonoBehaviour:
   - You might have killed Warriors ... Champions .... Generals and some guy called
     Greg, but I will crush your pitiful life
   - Do you really think you're the first hero to come challenge me Lord of Nine and
-    Half Levels of Hell, Destroyer of small farming villages
-  - There has been millions before you, and millions after. I will decorate my ceiling
-    with thy intestines and feed your bones to my lava Sharks
-  - 'My reign of terror has just begun, I will never stop until the whole world is
-    under my iron fist. And a Pathetic dog like you can''t stop me. '
-  - The land rivers will flow with the blood of your loved ones and the frogs will
-    be feeding on their gore
+    a Half Levels of Hell, Destroyer of small farming villages
+  - There has been millions before you, and millions will come after. I will decorate
+    my ceiling with thy intestines and feed your bones to my lava Sharks
+  - My reign of terror has just begun, I will never stop until the whole world is
+    under my Iron Fist! And a Pathetic dog like you can't stop me!
+  - The rivers of this land will flow with the blood of your loved ones and the frogs
+    will be feeding on their gore
   - You see yourself as the bringer of hope, but the hope your so called good deeds
-    have brought has nothing on the horros i have inflighted
+    have brought has nothing on the horros I have inflicted
   - I am the strangler of puppies, the pyromanic of the flowerfields, walker of the
     red traffic lights and worst of all the owner of a Macbook
   - 'My conquest is without equal, first the people of Easteros, then the kingdom
     of Foundor not to mention the Knights of Cameless '
-  - You quest is forfeit, i cannot be defeated. Go back home where you came from ...
-    ow wait I burned it all down, becouse that is how powerfull i am
-  - 'Run while you can, unworthy worm. Dum dum maggots like your self, i should tell
-    my mother of all the things you have done to shoud. She will be so mad '
-  - '... ow you are still here ? most people normally have left at this point .. thank
-    you .. i think ? '
-  - 'I guess back to my monolog, hhmmm it is really nice finally having some one to
-    just listen to me .. you now .. like really listen '
-  - '... Wait are you still here ?? are have you just afk, i hope you did not just
-    like really leave in the middle of my speech, promise me that you are still here
-    .. now ! or else '
-  - "... Okay, i have completely lost my train of thought, just like.. hit me, and
-    let\xB4s get this over with... "
+  - You quest is forfeit, I cannot be defeated. Go back home where you came from ...
+    oh wait, I burned it all down, becouse that is how powerfull I am!!!
+  - Run while you can, unworthy worm. Dumb maggots like yourself, I should tell my
+    mother of all the things you have done to me. She will be so mad!
+  - '... oh, you are still here? most people normally have left at this point .. thank
+    you .. I guess? '
+  - I guess back to my monologue, hmmm it is really nice finally having some one to
+    just listen to me .. you know .. like really listen ...
+  - '... Wait are you still here??? Are you just AFK? I hope you did not just like
+    really leave in the middle of my speech, promise me that you are still here ...
+    now! or else!'
+  - "... Okay, I have completely lost my train of thought, just like... hit me! Hit
+    me and let\xB4s get this over with... !"
   Winolog:
   - 'Awwwwww .... fuc*!!! AW! That really hurt, why did you do that? Who hit''s people,
     fuuuuuccc*** and right on my shin. You are a god damn ass hole, get the out ...
@@ -657,7 +657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &320120004
 AudioSource:
@@ -817,7 +817,7 @@ PrefabInstance:
     - target: {fileID: 1896643048602998921, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1896643048602998921, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
@@ -1167,10 +1167,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.76, y: 21.02, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_Children:
-  - {fileID: 964099526}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &571912512
 MonoBehaviour:
@@ -1439,7 +1438,7 @@ Transform:
   m_LocalScale: {x: 2.75, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867176275
 GameObject:
@@ -1665,7 +1664,7 @@ Transform:
   m_LocalScale: {x: 0.14308593, y: 4.0968747, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1169939277
 GameObject:
@@ -1811,7 +1810,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526287393 stripped
 GameObject:
@@ -1949,7 +1948,7 @@ Transform:
   m_LocalScale: {x: 0.14308593, y: 4.0968747, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1549799294 stripped
 RectTransform:
@@ -2035,7 +2034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1712428923
 GameObject:
@@ -2589,7 +2588,7 @@ Transform:
   m_LocalScale: {x: 0.64746386, y: 4.0968747, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120490684
 GameObject:
@@ -2696,7 +2695,7 @@ Transform:
   m_LocalScale: {x: 0.64746386, y: 4.0968747, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &487389331972904400
 PrefabInstance:
