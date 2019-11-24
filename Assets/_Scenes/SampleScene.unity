@@ -1010,6 +1010,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1716004167389116363, guid: 22b129876f5c94944803a147d87d5095,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716004167389116363, guid: 22b129876f5c94944803a147d87d5095,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716004167389116363, guid: 22b129876f5c94944803a147d87d5095,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1716004166731384369, guid: 22b129876f5c94944803a147d87d5095,
         type: 3}
       propertyPath: Player
