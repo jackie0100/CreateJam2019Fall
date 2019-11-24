@@ -24,25 +24,26 @@ public class TheMonoLog : MonoBehaviour
         if (WaitUntilMono <= 0){    
             if (!PopUp.activeSelf){                
             PopUp.SetActive(true);               
-            StartCoroutine("Fade(Monologs[0])"); 
+            StartCoroutine("Fade"); 
             }        
         } else {
             WaitUntilMono -= Time.deltaTime;
         }
     }
 
-    IEnumerator Fade(string sentence) 
+    IEnumerator Fade() 
     {
+        
+        UpdatePopUp();
         string word = "";
-        for (int i = 0; i > sentence.Length; i++) 
+        for (int i = 0; i < Monologs[0].Length; i++) 
         {
-            if (sentence[i] == ' '){
+            if (Monologs[0][i] == ' '){
                 currentSentenct += word + " ";
-                UpdatePopUp();
             } else {
-                word += sentence[i];
+                word += Monologs[0][i];
             }
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.2f);
         }
         yield return null;
     }
