@@ -2,16 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class SideQuestNPC : MonoBehaviour
 {
     [SerializeField]
+    int _npcId;
+    [SerializeField]
     Text _questIndicator;
     [SerializeField]
-    SideQuestNPC _targetTurnin;
-    [SerializeField]
     bool _hasQuest;
+    [SerializeField]
+    List<Quest> _quest;
+    [SerializeField]
     bool _isTurnin;
+    [SerializeField]
+    List<SideQuestNPC> _allNpcs;
+    [SerializeField]
+    string _name;
+
+    public static List<Quest> ActiveQuest;
 
 
     public bool IsTurnin
@@ -65,11 +75,32 @@ public class SideQuestNPC : MonoBehaviour
         }
     }
 
+    public List<Quest> Quest
+    {
+        get
+        {
+            return _quest;
+        }
+
+        set
+        {
+            _quest = value;
+            if (value != null)
+            {
+                HasQuest = true;
+            }
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
+        _npcId = _allNpcs.IndexOf(this);
         HasQuest = _hasQuest;
+
+        if (ActiveQuest == null)
+            ActiveQuest = new List<Quest>();
     }
 
     // Update is called once per frame
@@ -80,15 +111,35 @@ public class SideQuestNPC : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && _hasQuest)
+        if (collision.gameObject.tag == "Player" && Quest.Count > 0)
         {
-            _targetTurnin.IsTurnin = true;
-            HasQuest = false;
+            TextboxHelper.Instance.SetText(_name, Quest[0].QuestText);
+            _allNpcs[Quest[0].TurninNpcId].IsTurnin = true;
+            ActiveQuest.Add(Quest[0]);
+            Quest.RemoveAt(0);
+            if (Quest.Count == 0)
+            {
+                HasQuest = false;
+            }
         }
-        if (collision.gameObject.tag == "Player" && _isTurnin)
+        else if (collision.gameObject.tag == "Player" && ActiveQuest.Any(t => t.TurninNpcId == _npcId))
         {
-            IsTurnin = false;
-            HasQuest = true;
+            Quest activequest = ActiveQuest.First(t => t.TurninNpcId == _npcId);
+            TextboxHelper.Instance.SetText(_name, activequest.CompletedText);
+
+            foreach (Quest q in activequest.LeadToQuest)
+            {
+                _allNpcs[q.StartAtNpcId].HasQuest = true;
+                _allNpcs[q.StartAtNpcId].Quest.Add(q);
+            }
+
+            ActiveQuest.Remove(activequest);
+
+            if (!ActiveQuest.Any(t => t.TurninNpcId == _npcId))
+            {
+                IsTurnin = false;
+            }
+
             GetComponent<ThrowCoins>().ThrowSomeCoins();
         }
     }

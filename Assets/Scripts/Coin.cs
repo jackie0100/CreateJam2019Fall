@@ -15,7 +15,7 @@ public class Coin : Item
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<BackPack>().Coins += 1;
-            _audioSourceCoin.SetSoundSettingsAndPlayOneShot(_soundEffectCoin);
+            collision.GetComponent<AudioSource>().SetSoundSettingsAndPlayOneShot(_soundEffectCoin);
             Destroy(this.gameObject);
         }
     }
