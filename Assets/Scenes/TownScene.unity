@@ -1839,7 +1839,7 @@ PrefabInstance:
     - target: {fileID: 8520884248084392432, guid: d4dc30e957d191241a9df558e552cb7e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8520884248084392396, guid: d4dc30e957d191241a9df558e552cb7e,
         type: 3}
@@ -1946,7 +1946,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5677464914585236921, guid: d4dc30e957d191241a9df558e552cb7e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d4dc30e957d191241a9df558e552cb7e, type: 3}
 --- !u!1 &317761421
 GameObject:
@@ -17905,7 +17906,7 @@ PrefabInstance:
     - target: {fileID: 7926794522357964536, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_Name
-      value: NPC (0)
+      value: Saint Nicleja
       objectReference: {fileID: 0}
     - target: {fileID: 7926794522357964533, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
@@ -18040,7 +18041,7 @@ PrefabInstance:
     - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: _name
-      value: Town Guard
+      value: Saint Nicleja
       objectReference: {fileID: 0}
     - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
@@ -18827,6 +18828,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4485563646916684853, guid: bb5eeef69575438479ac670c988425d3,
     type: 3}
   m_PrefabInstance: {fileID: 1249099127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1261917476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8520884248084392432, guid: d4dc30e957d191241a9df558e552cb7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 300356986}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1276972607
 GameObject:
@@ -135176,6 +135183,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5530377062333892136, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: popup
+      value: 
+      objectReference: {fileID: 1261917476}
     - target: {fileID: 5955443658149453861, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_Name
@@ -135236,6 +135248,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: MovementSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_FlipX
@@ -135250,11 +135267,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteSortPoint
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
-        type: 3}
-      propertyPath: MovementSpeed
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4469831413355444226, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
@@ -136362,7 +136374,7 @@ PrefabInstance:
     - target: {fileID: 2970215414227726946, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
         type: 3}
       propertyPath: m_Name
-      value: NPC (10)
+      value: Lumre Fot
       objectReference: {fileID: 0}
     - target: {fileID: 2970215414227726959, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
         type: 3}
@@ -136508,7 +136520,7 @@ PrefabInstance:
     - target: {fileID: 2970215414227726958, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
         type: 3}
       propertyPath: _name
-      value: Lewis
+      value: Lumre Fot
       objectReference: {fileID: 0}
     - target: {fileID: 2970215414227726958, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
         type: 3}
