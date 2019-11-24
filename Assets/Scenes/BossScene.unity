@@ -914,11 +914,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4184675991303237935, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 230
-      objectReference: {fileID: 0}
     - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -938,6 +933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 11.099982
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184675991303237935, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 635078698839149907, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
@@ -1837,6 +1837,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1526287395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526287393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90452ba901bc82f448b67d39cfa28438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1526287399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1210407204930181966, guid: b72a1a23a033cda4fa293244a9e2620c,
@@ -2359,21 +2371,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
-        type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: MovementSpeed
@@ -2393,6 +2390,21 @@ PrefabInstance:
         type: 3}
       propertyPath: MovementSpeed
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7409778233814076988, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4469831413355444226, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
