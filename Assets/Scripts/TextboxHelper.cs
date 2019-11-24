@@ -17,6 +17,8 @@ public class TextboxHelper : MonoBehaviour
     private void Start()
     {
         Instance = this;
+
+        Close();
     }
 
     private void Update()
