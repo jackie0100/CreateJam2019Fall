@@ -12,9 +12,9 @@ public class Character : MonoBehaviour
 
     
     public void TakeDamage (int damage) {
-        print("Taking Damge " + damage + "Life left " + Health);
         Health -= damage;
         if (Health <= 0){
+            Death();
             Destroy(this.gameObject);
         }
     }
@@ -49,6 +49,9 @@ public class Character : MonoBehaviour
             }
         }
         return  vector;
+    }
+    public virtual  void Death(){
+
     }
     private Quaternion GetAttackRotation() {
         Quaternion quaternion = new Quaternion();
