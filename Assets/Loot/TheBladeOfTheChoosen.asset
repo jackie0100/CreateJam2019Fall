@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e71015b7eb665e408831018c244f025, type: 3}
   m_Name: TheBladeOfTheChoosen
   m_EditorClassIdentifier: 
-  Name: 
-  EquipLine: 
+  Name: Blade of the Choosen
+  EquipLine: Legens say the wielder of this powerfull artifact can obliterate in one
+    fell swoop. unfortunately you are not the choosen one
   SellLine: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -5694993301688967865, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}

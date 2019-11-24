@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e71015b7eb665e408831018c244f025, type: 3}
   m_Name: ASingleWolfClaw
   m_EditorClassIdentifier: 
-  Name: 
-  EquipLine: 
+  Name: A Single Wolf Claw
+  EquipLine: Ahhh a single wolf claw ... What do you mean, take more ? .. what ? ..
+    Hahaha no! Every one knows wolves only have one claw
   SellLine: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -8924490698211442375, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}
