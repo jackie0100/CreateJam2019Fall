@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class NPCBasic : Character
 {
+    [SerializeField]
+    GameObject _levelupcanvas;
+
     public SoundEffect _wolfSpotsPlayer;
     public new AudioSource _audioSource;
     // Movement 
@@ -162,7 +165,7 @@ public class NPCBasic : Character
             }
         }
         if (IsMiniBoss){
-            FindObjectOfType<LevelUpPopUp>().state = 1;
+            _levelupcanvas.SetActive(true);
         }
         anim.SetTrigger("Death");
         
