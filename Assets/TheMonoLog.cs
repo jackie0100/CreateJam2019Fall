@@ -19,8 +19,14 @@ public class TheMonoLog : MonoBehaviour
     
     // Start is called before the first frame update
 
-    public AudioSource audioSource;
+    private AudioSource audioSource;
     public AudioClip [] monologAudio;
+
+    public SoundEffect deathSound;
+    public AudioSource bossSoundSource;
+
+    public SoundEffect victoryMusic;
+    public AudioSource victoryMusicSource;
 
     void Start()
     {
@@ -88,7 +94,10 @@ public class TheMonoLog : MonoBehaviour
 
     IEnumerator FadeWin() 
     {
-        
+        bossSoundSource.SetSoundSettingsAndPlayOneShot(deathSound);
+        victoryMusicSource.Stop();
+        victoryMusicSource.SetSoundSettingsAndPlayOneShot(victoryMusic);
+
         currentSentenct = "";
         UpdatePopUp();
         print("Won");
