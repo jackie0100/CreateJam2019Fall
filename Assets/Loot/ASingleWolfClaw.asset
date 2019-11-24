@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ASingleWolfClaw
   m_EditorClassIdentifier: 
   Name: A Single Wolf Claw
-  EquipLine: Ahhh a single wolf claw ... What do you mean, take more ? .. what ? ..
-    Hahaha no! Every one knows wolves only have one claw
+  EquipLine: Ahh, a single wolf claw ... What do you mean, take more? .. what? ..
+    Hahaha no! Everyone knows wolves only have one claw!
   SellLine: 
   Icon: {fileID: -8924490698211442375, guid: 892417b83085c6944a2eb1246b5560e9, type: 3}
