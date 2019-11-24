@@ -24,7 +24,7 @@ public class TextboxHelper : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown && CloseWithInput)
+        if (Input.GetKeyDown(KeyCode.Space) && CloseWithInput)
         {
             if (OnTextboxContinue != null)
             {

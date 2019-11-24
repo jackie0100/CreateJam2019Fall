@@ -10,8 +10,7 @@ public class ValidLevelUpOption : MonoBehaviour, IPointerEnterHandler, IPointerE
     public Color HoverColor;
     public Color ClickColor;
     public Image image;
-    public LevelUpPopUp levelUpPopUp;
-
+    public GameObject levelUpPopUp;
     public GameObject Popup;
     
     [TextArea]
@@ -20,7 +19,7 @@ public class ValidLevelUpOption : MonoBehaviour, IPointerEnterHandler, IPointerE
     public void OnPointerClick(PointerEventData eventData)
     {
         image.color = ClickColor;
-        levelUpPopUp.Close();    
+        levelUpPopUp.SetActive(false);    
         Popup.SetActive(true);    
         Popup.SetActive(true);    
         Popup.transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = Message;

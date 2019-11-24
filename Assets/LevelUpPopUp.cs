@@ -12,24 +12,27 @@ public class LevelUpPopUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         startPosistion = transform.position;
-        transform.position += MovePosistion;
+        transform.position += 4000 * Vector3.down;
     }
     public void LevelUp (){
-        state = 1;
+        transform.position = startPosistion;
     }
 
-    public void Close () {
-        state = 2;
+    public void Close ()
+    {
+        transform.position += 4000 * Vector3.down;
     }
     // Update is called once per frame
     void Update()
-    {
+    {/*
         print (state);
         if (state == 1){
             transform.position = Vector3.MoveTowards(transform.position, startPosistion, 5);
         } else if (state == 2){            
             transform.position = Vector3.MoveTowards(transform.position, EndPosistion + startPosistion, TimeSpan);
         }
+    */
     }
 }
