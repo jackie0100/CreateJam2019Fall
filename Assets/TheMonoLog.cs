@@ -15,9 +15,13 @@ public class TheMonoLog : MonoBehaviour
     public bool isTalking = false;
     public int CurrentMono = 0;
     // Start is called before the first frame update
+
+    public AudioSource audioSource;
+    public AudioClip [] monologAudio;
+
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
     string currentSentenct;
     // Update is called once per frame
@@ -41,6 +45,7 @@ public class TheMonoLog : MonoBehaviour
 
     IEnumerator Fade() 
     {
+        audioSource.clip = monologAudio[CurrentMono];
         
         UpdatePopUp();
         print("Called");
@@ -51,8 +56,13 @@ public class TheMonoLog : MonoBehaviour
                 currentSentenct += word + " ";
                 word = "";                
                 UpdatePopUp();
+                audioSource.mute = true;
+                yield return new WaitForSeconds(.01f);
+                audioSource.mute = false;
+                audioSource.Play();
             } else {
                 word += Monologs[CurrentMono][i];
+                
             }
             yield return new WaitForSeconds(.05f);
         }
