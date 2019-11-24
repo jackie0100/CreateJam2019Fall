@@ -15632,6 +15632,12 @@ PrefabInstance:
       propertyPath: _name
       value: Town Guard
       objectReference: {fileID: 0}
+    - target: {fileID: 7926794522357964532, guid: c59887bfd0a3ca34ba0873231df2a4e4,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     - target: {fileID: 7926794522357964533, guid: c59887bfd0a3ca34ba0873231df2a4e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -133212,6 +133218,12 @@ PrefabInstance:
       propertyPath: _name
       value: Hunter
       objectReference: {fileID: 0}
+    - target: {fileID: 7216090749221451659, guid: b35f805bb8b0eba43a89f9e387e80ad9,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b35f805bb8b0eba43a89f9e387e80ad9, type: 3}
 --- !u!1001 &1141663805994491675
@@ -133356,6 +133368,12 @@ PrefabInstance:
       propertyPath: _name
       value: Mystery Person
       objectReference: {fileID: 0}
+    - target: {fileID: 7050843371037862650, guid: 060adb87e6b6b9e4f972da6b70018b29,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060adb87e6b6b9e4f972da6b70018b29, type: 3}
 --- !u!1001 &1853969526482928557
@@ -133500,6 +133518,12 @@ PrefabInstance:
       propertyPath: _name
       value: Tiny Popper
       objectReference: {fileID: 0}
+    - target: {fileID: 8627558681340974491, guid: adc5fb941fa4737418ba7e09af020589,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adc5fb941fa4737418ba7e09af020589, type: 3}
 --- !u!1001 &3139844733796724063
@@ -133644,6 +133668,12 @@ PrefabInstance:
       propertyPath: _name
       value: The Goblin
       objectReference: {fileID: 0}
+    - target: {fileID: 5013449459352494099, guid: 62b5ee4aa060ec044b315627f0b04a8a,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62b5ee4aa060ec044b315627f0b04a8a, type: 3}
 --- !u!1001 &4675555844835319464
@@ -133788,6 +133818,12 @@ PrefabInstance:
       propertyPath: _name
       value: Secret Assassin
       objectReference: {fileID: 0}
+    - target: {fileID: 3378624248094821436, guid: f6a35aa2f8a91204ebc9addf987a5591,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6a35aa2f8a91204ebc9addf987a5591, type: 3}
 --- !u!1001 &5132400090186137489
@@ -133948,6 +133984,12 @@ PrefabInstance:
       propertyPath: _name
       value: Lewis
       objectReference: {fileID: 0}
+    - target: {fileID: 2970215414227726958, guid: 30d0f4dd2335eb248b36adc2bf19e74d,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30d0f4dd2335eb248b36adc2bf19e74d, type: 3}
 --- !u!1001 &5415575506312691234
@@ -134092,6 +134134,12 @@ PrefabInstance:
       propertyPath: _name
       value: Mercenary
       objectReference: {fileID: 0}
+    - target: {fileID: 2676928888555748870, guid: 24ef234d0d384154598bc0e9f60944ba,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24ef234d0d384154598bc0e9f60944ba, type: 3}
 --- !u!1001 &6326449562823353989
@@ -134236,6 +134284,12 @@ PrefabInstance:
       propertyPath: _name
       value: Jester
       objectReference: {fileID: 0}
+    - target: {fileID: 4165180691062970015, guid: 31b41e4efc722b34598d4b11b5413bb3,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b41e4efc722b34598d4b11b5413bb3, type: 3}
 --- !u!1001 &6540641321054265930
@@ -134380,6 +134434,12 @@ PrefabInstance:
       propertyPath: _name
       value: Sandra
       objectReference: {fileID: 0}
+    - target: {fileID: 8099874197333709371, guid: eb9df6644acacc9469b3edbd963e51ac,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb9df6644acacc9469b3edbd963e51ac, type: 3}
 --- !u!1001 &6792129811858081329
@@ -134524,6 +134584,12 @@ PrefabInstance:
       propertyPath: _name
       value: The Dryad
       objectReference: {fileID: 0}
+    - target: {fileID: 3477869135197999217, guid: 2a6400537f6e2194cb2d2de767be67d6,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a6400537f6e2194cb2d2de767be67d6, type: 3}
 --- !u!1001 &7230769929344370624
@@ -134668,6 +134734,12 @@ PrefabInstance:
       propertyPath: _name
       value: Weird Armoured Person
       objectReference: {fileID: 0}
+    - target: {fileID: 745762927795940412, guid: aff1b705d442cfb49889d6f46f397d86,
+        type: 3}
+      propertyPath: ActiveQuest
+      value: 
+      objectReference: {fileID: 11400000, guid: 73da11debdf8991439505de7bb86c2ce,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aff1b705d442cfb49889d6f46f397d86, type: 3}
 --- !u!114 &7926794521606591124 stripped

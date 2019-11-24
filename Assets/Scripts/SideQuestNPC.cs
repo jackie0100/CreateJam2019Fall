@@ -20,8 +20,8 @@ public class SideQuestNPC : MonoBehaviour
     List<SideQuestNPC> _allNpcs;
     [SerializeField]
     string _name;
-
-    public static List<Quest> ActiveQuest;
+    [SerializeField]
+    QuestList ActiveQuest;
 
 
     public bool IsTurnin
@@ -92,15 +92,13 @@ public class SideQuestNPC : MonoBehaviour
         }
     }
 
-
     // Start is called before the first frame update
     void Start()
     {
         _npcId = _allNpcs.IndexOf(this);
         HasQuest = _hasQuest;
 
-        if (ActiveQuest == null)
-            ActiveQuest = new List<Quest>();
+        ActiveQuest.ActiveQuest = new List<Quest>();
     }
 
     // Update is called once per frame
@@ -115,16 +113,17 @@ public class SideQuestNPC : MonoBehaviour
         {
             TextboxHelper.Instance.SetText(_name, Quest[0].QuestText);
             _allNpcs[Quest[0].TurninNpcId].IsTurnin = true;
-            ActiveQuest.Add(Quest[0]);
+            ActiveQuest.ActiveQuest.Add(Quest[0]);
             Quest.RemoveAt(0);
+            Debug.Log(Quest.Count);
             if (Quest.Count == 0)
             {
                 HasQuest = false;
             }
         }
-        else if (collision.gameObject.tag == "Player" && ActiveQuest.Any(t => t.TurninNpcId == _npcId))
+        else if (collision.gameObject.tag == "Player" && ActiveQuest.ActiveQuest.Any(t => t.TurninNpcId == _npcId))
         {
-            Quest activequest = ActiveQuest.First(t => t.TurninNpcId == _npcId);
+            Quest activequest = ActiveQuest.ActiveQuest.First(t => t.TurninNpcId == _npcId);
             TextboxHelper.Instance.SetText(_name, activequest.CompletedText);
 
             foreach (Quest q in activequest.LeadToQuest)
@@ -133,14 +132,17 @@ public class SideQuestNPC : MonoBehaviour
                 _allNpcs[q.StartAtNpcId].Quest.Add(q);
             }
 
-            ActiveQuest.Remove(activequest);
+            ActiveQuest.ActiveQuest.Remove(activequest);
 
-            if (!ActiveQuest.Any(t => t.TurninNpcId == _npcId))
+            if (!ActiveQuest.ActiveQuest.Any(t => t.TurninNpcId == _npcId))
             {
                 IsTurnin = false;
             }
 
-            GetComponent<ThrowCoins>().ThrowSomeCoins();
+            foreach (DropsWithAmount d in activequest.Rewards)
+            {
+                d.ThrowItems(transform);
+            }
         }
     }
 }

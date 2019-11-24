@@ -17,6 +17,8 @@ public class Quest : ScriptableObject
     int _turninNpcId;
     [SerializeField]
     Quest[] _leadToQuest;
+    [SerializeField]
+    DropsWithAmount[] _rewards;
 
     public string QuestText
     {
@@ -81,5 +83,57 @@ public class Quest : ScriptableObject
         {
             _startAtNpcId = value;
         }
+    }
+
+    public DropsWithAmount[] Rewards
+    {
+        get
+        {
+            return _rewards;
+        }
+
+        set
+        {
+            _rewards = value;
+        }
+    }
+}
+
+[System.Serializable]
+public class DropsWithAmount
+{
+    [SerializeField]
+    int _amount;
+    [SerializeField]
+    GameObject _dropPrefab;
+
+    public int Amount
+    {
+        get
+        {
+            return _amount;
+        }
+        set
+        {
+            _amount = value;
+        }
+    }
+
+    public GameObject DropPrefab
+    {
+        get
+        {
+            return _dropPrefab;
+        }
+        set
+        {
+            _dropPrefab = value;
+        }
+    }
+
+    public void ThrowItems(Transform target)
+    {
+        for (int i = 0; i < _amount; i++)
+            GameObject.Instantiate(_dropPrefab, target.position + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f)), Quaternion.identity);
     }
 }
