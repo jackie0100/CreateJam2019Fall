@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4e6c4f8fc6cda048ae2625982146461, type: 3}
-  m_Name: New Quest
+  m_Name: Lost Dog 2
   m_EditorClassIdentifier: 
   _questText: 
   _completedText: 
