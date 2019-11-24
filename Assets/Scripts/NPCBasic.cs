@@ -16,7 +16,11 @@ public class NPCBasic : Character
     public float AttackSpeed;
     private float attackCountDown;
     public float SigtDistence;
-    public int SightAngle;
+    public int SightAngle; 
+    // Loot
+    public GameObject Coin;
+    public int Coins;
+    public List<GameObject> loots = new List<GameObject>();
 
     Animator anim;
     // Start is called before the first frame update
@@ -120,5 +124,23 @@ public class NPCBasic : Character
         return angle; 
     }
 
-    
+    public override void Death() {
+        if (Coins > 0){
+            for (int i = 0; i < Coins; i ++){
+                GameObject coins = Instantiate (Coin, transform.position, transform.rotation);
+                float angle = Random.Range(0,360) * Mathf.PI/180;
+                Vector3 dirc = new Vector3(Mathf.Cos(angle),Mathf.Sin(angle), 0);
+                coins.GetComponent<Rigidbody2D>().velocity = new Vector2(dirc.x, dirc.y) * 10;
+            }
+        }
+        if (loots.Count > 0){
+            foreach (GameObject loot in loots){
+                GameObject newLoot = Instantiate (loot, transform.position, transform.rotation);
+                float angle = Random.Range(0,360) * Mathf.PI/180;
+                Vector3 dirc = new Vector3(Mathf.Cos(angle),Mathf.Sin(angle), 0);
+                newLoot.GetComponent<Rigidbody2D>().velocity = new Vector2(dirc.x, dirc.y) * 10;
+
+            }
+        }
+    }
 }

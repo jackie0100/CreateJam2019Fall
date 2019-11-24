@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Coin : Item
 {
     [SerializeField]
     SoundEffect _soundEffectCoin;
@@ -14,9 +14,8 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            collision.gameObject.GetComponent<BackPack>().Coins += 1;
             _audioSourceCoin.SetSoundSettingsAndPlayOneShot(_soundEffectCoin);
-            //collision.GetComponent<SoundEffect>().PlaySound();
-            //GameObject.Find("SoundCoin").GetComponent<SoundEffect>().PlaySound();
             Destroy(this.gameObject);
         }
     }
