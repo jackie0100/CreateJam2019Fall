@@ -438,6 +438,8 @@ MonoBehaviour:
   Winolog: []
   PopUp: {fileID: 370130639}
   WaitUntilMono: 2
+  isTalking: 0
+  CurrentMono: 0
 --- !u!4 &320120003
 Transform:
   m_ObjectHideFlags: 0
@@ -615,15 +617,40 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 3.3000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 30.254978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184675993037816605, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 126.51004
+      objectReference: {fileID: 0}
     - target: {fileID: 4184675992638920024, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.7649994
+      value: -2.9900084
       objectReference: {fileID: 0}
     - target: {fileID: 4184675992638920024, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -53.67
+      value: -61.17999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4184675993194615360, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
+        type: 3}
+      propertyPath: m_Text
+      value: Bob the Terrible
       objectReference: {fileID: 0}
     - target: {fileID: 4184675992638920027, guid: 44b5d3ba58d1e9d48ba24f20dc843d9d,
         type: 3}
