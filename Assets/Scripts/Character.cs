@@ -15,12 +15,11 @@ public class Character : MonoBehaviour
         Health -= damage;
         if (Health <= 0){
             Death();
-            StartCoroutine(DeathRoutine());
             
         }
     }
 
-    IEnumerator DeathRoutine()
+    public IEnumerator DeathRoutine()
     {
         yield return new WaitForSeconds(0.5f);
         Destroy(this.gameObject);

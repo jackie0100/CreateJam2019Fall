@@ -165,6 +165,8 @@ public class NPCBasic : Character
             FindObjectOfType<LevelUpPopUp>().state = 1;
         }
         anim.SetTrigger("Death");
+        
+        StartCoroutine(DeathRoutine());
 
         _audioSource.SetSoundSettingsAndPlayOneShot(_characterDies);
     }
