@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: HarbingerOfDeath
   m_EditorClassIdentifier: 
   Name: Harbinger of Death
-  EquipLine: 'You need to be level 9001 to equip
+  EquipLine: 'You need to be level 9001 to equip this.
 
-    current level 1'
+    Current level: 1'
   SellLine: 
   Icon: {fileID: 21300000, guid: f85c5ab11306b684e938ad765f8d6d8e, type: 3}
