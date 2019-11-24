@@ -27,6 +27,10 @@ public class SideQuestNPC : MonoBehaviour
             {
                 _questIndicator.text = "?";
             }
+            else if (HasQuest)
+            {
+                _questIndicator.text = "!";
+            }
             else
             {
                 _questIndicator.text = "";
@@ -48,6 +52,10 @@ public class SideQuestNPC : MonoBehaviour
             if (value)
             {
                 _questIndicator.text = "!";
+            }
+            else if (IsTurnin)
+            {
+                _questIndicator.text = "?";
             }
             else
             {
