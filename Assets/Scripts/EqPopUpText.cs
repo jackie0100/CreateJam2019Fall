@@ -6,7 +6,10 @@ public class EqPopUpText : MonoBehaviour
 {
 
     public int Countdown = 2;
-    private float countingDown = 0;
+    private float countingDown;
+    void Start () {
+        countingDown = Countdown;
+    }
     void OnEnable () {
         countingDown = Countdown;
     }

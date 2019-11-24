@@ -24,7 +24,7 @@ public class NPCBasic : Character
     public int Coins;
     public List<GameObject> loots = new List<GameObject>();
     private  bool isAttacking = false;
-
+    public bool IsMiniBoss;
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -161,7 +161,9 @@ public class NPCBasic : Character
 
             }
         }
-
+        if (IsMiniBoss){
+            FindObjectOfType<LevelUpPopUp>().state = 1;
+        }
         anim.SetTrigger("Death");
 
         _audioSource.SetSoundSettingsAndPlayOneShot(_characterDies);

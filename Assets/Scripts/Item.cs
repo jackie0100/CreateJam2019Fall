@@ -6,8 +6,8 @@ public class Item : MonoBehaviour
 {
     public GameObject target;
     Rigidbody2D rigidbody;
-    float maxV = 10;
-    float deAcc = 1;
+    float maxV = 4;
+    float deAcc = 0.1f;
     // Start is called before the first frame update
     [HideInInspector]
     void Start()
@@ -23,18 +23,19 @@ public class Item : MonoBehaviour
             
             print(vector);
             rigidbody.velocity += new Vector2(vector.x, vector.y);
-        } else if (rigidbody.velocity != Vector2.zero){
+        } 
+        if (rigidbody.velocity != Vector2.zero){
             float x = rigidbody.velocity.x;
             float y = rigidbody.velocity.y;
-            if (x > maxV){
-                x -= deAcc;
-            } else if (x < -maxV){
-                x += deAcc;
+            if (x > 0){
+                x =(x < maxV)? x - deAcc: maxV;
+            } else {
+                x =(x > -maxV)? x + deAcc: - maxV;
             }
-            if (y > -maxV){
-                y -= deAcc;
-            } else if (y < -maxV){
-                y += deAcc;
+            if (y > 0){
+                y =(y < maxV)? y - deAcc: maxV;
+            } else {
+                x =(y > -maxV)? y + deAcc: - maxV;
             }
             rigidbody.velocity = new Vector2(x,y);
         }
