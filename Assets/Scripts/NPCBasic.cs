@@ -29,6 +29,7 @@ public class NPCBasic : Character
     private  bool isAttacking = false;
     public bool IsMiniBoss;
     Animator anim;
+    private Vector3 AttackLocation; 
     // Start is called before the first frame update
     void Start()
     {
@@ -104,12 +105,16 @@ public class NPCBasic : Character
             Attack();
             isAttacking = false;
         } else {
-            if (!isAttacking){                
+            if (!isAttacking){     
+                AttackLocation = Target.transform.position;           
                 anim.SetTrigger("Attack");
             }
             isAttacking = true;
             attackCountDown -= Time.deltaTime;
         }
+    }
+    public override Vector3 GetAttackPostion () {
+        return Target.transform.localPosition;
     }
     private void Rotate () {
         Vector3 rotation = (Target.transform.position - transform.position).normalized;
@@ -152,7 +157,7 @@ public class NPCBasic : Character
                 GameObject coins = Instantiate (Coin, transform.position, transform.rotation);
                 float angle = Random.Range(0,360) * Mathf.PI/180;
                 Vector3 dirc = new Vector3(Mathf.Cos(angle),Mathf.Sin(angle), 0);
-                coins.GetComponent<Rigidbody2D>().velocity = new Vector2(dirc.x, dirc.y) * 10;
+                coins.GetComponent<Rigidbody2D>().velocity = new Vector2(dirc.x, dirc.y) * Random.Range(90,100)/10;
             }
         }
         if (loots.Count > 0){
@@ -160,8 +165,7 @@ public class NPCBasic : Character
                 GameObject newLoot = Instantiate (loot, transform.position, transform.rotation);
                 float angle = Random.Range(0,360) * Mathf.PI/180;
                 Vector3 dirc = new Vector3(Mathf.Cos(angle),Mathf.Sin(angle), 0);
-                newLoot.GetComponent<Rigidbody2D>().velocity = new Vector2(dirc.x, dirc.y) * 10;
-
+                newLoot.GetComponent<Rigidbody2D>().velocity = new Vector2(dirc.x, dirc.y) * Random.Range(90,100)/10;
             }
         }
         if (IsMiniBoss){

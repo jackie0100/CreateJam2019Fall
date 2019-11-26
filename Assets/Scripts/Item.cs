@@ -25,19 +25,22 @@ public class Item : MonoBehaviour
             rigidbody.velocity += new Vector2(vector.x, vector.y);
         } 
         if (rigidbody.velocity != Vector2.zero){
-            float x = rigidbody.velocity.x;
-            float y = rigidbody.velocity.y;
-            if (x > 0){
-                x =(x < maxV)? x - deAcc: maxV;
-            } else {
-                x =(x > -maxV)? x + deAcc: - maxV;
-            }
-            if (y > 0){
-                y =(y < maxV)? y - deAcc: maxV;
-            } else {
-                x =(y > -maxV)? y + deAcc: - maxV;
-            }
-            rigidbody.velocity = new Vector2(x,y);
+            rigidbody.velocity = rigidbody.velocity * 0.9f;
+        }
+        PreventAcc ();
+    }
+    void PreventAcc () {
+        float x = rigidbody.velocity.x;
+        float y = rigidbody.velocity.y;
+        if (x > maxV){
+            x = maxV;
+        } else if (x < -maxV){
+            x = -maxV;
+        }
+        if (y > maxV){
+            y = maxV;
+        } else if (y < -maxV){
+            y = -maxV;
         }
     }
 }

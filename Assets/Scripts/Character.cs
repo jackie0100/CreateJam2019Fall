@@ -31,7 +31,7 @@ public class Character : MonoBehaviour
         attackScript.Damage = Damage;
         attackScript.Owner = this.gameObject;
     }
-    private Vector3 GetAttackPostion() {
+    public virtual Vector3 GetAttackPostion() {
         Vector3 vector = transform.position;
         switch (currentRotation){
             case 0: {
