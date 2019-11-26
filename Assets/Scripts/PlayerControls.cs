@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerControls : Character
 {
@@ -23,6 +25,7 @@ public class PlayerControls : Character
     // Start is called before the first frame update
 
     Animator anim;
+    public TextMesh text; 
 
     void Start()
     {
@@ -38,6 +41,7 @@ public class PlayerControls : Character
     {
         Movement();
         Attacking();
+        text.text = Health.ToString();
     }
 
     void FixedUpdate () {
