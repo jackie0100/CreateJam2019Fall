@@ -22,10 +22,10 @@ public class TheMonoLog : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip [] monologAudio;
 
-    public SoundEffect deathSound;
+    public SoundEvent deathSound;
     public AudioSource bossSoundSource;
 
-    public SoundEffect victoryMusic;
+    public SoundEvent victoryMusic;
     public AudioSource victoryMusicSource;
 
     void Start()

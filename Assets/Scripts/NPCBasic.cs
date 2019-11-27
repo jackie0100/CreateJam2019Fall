@@ -7,7 +7,7 @@ public class NPCBasic : Character
     [SerializeField]
     GameObject _levelupcanvas;
 
-    public SoundEffect _wolfSpotsPlayer;
+    public SoundEvent _wolfSpotsPlayer;
     public new AudioSource _audioSource;
     // Movement 
     public List<Sprite> Sprites;
@@ -149,7 +149,7 @@ public class NPCBasic : Character
         return angle; 
     }
 
-    public SoundEffect _characterDies;
+    public SoundEvent _characterDies;
 
     public override void Death() {
         if (Coins > 0){

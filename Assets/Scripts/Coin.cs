@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class Coin : Item
 {
+    public float soundLimit; //seconds
+    public static float timeLastSound;
+
     [SerializeField]
-    SoundEffect _soundEffectCoin;
+    SoundEvent _soundEffectCoin;
 
     [SerializeField]
     AudioSource _audioSourceCoin;
@@ -15,7 +18,12 @@ public class Coin : Item
         if (collision.gameObject.tag == "Player")
         {
             BackPack.Coins += 1;
-            collision.GetComponent<AudioSource>().SetSoundSettingsAndPlayOneShot(_soundEffectCoin);
+            if (timeLastSound + soundLimit + Random.value * 0.1f < Time.time)
+            {
+                collision.GetComponent<AudioSource>().SetSoundSettingsAndPlayOneShot(_soundEffectCoin);
+                Debug.Log("play: " + Time.time);
+                timeLastSound = Time.time;
+            }
             Destroy(this.gameObject);
         }
     }

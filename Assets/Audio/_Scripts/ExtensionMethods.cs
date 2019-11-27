@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class ExtensionMethods
 {
-    public static void SetSoundSettingsAndPlayOneShot(this AudioSource audioSource, SoundEffect targetaudio)
+    public static void SetSoundSettingsAndPlayOneShot(this AudioSource audioSource, SoundEvent targetaudio)
     {
         int selectedFile = Random.Range(0, targetaudio.sound.Length);
 

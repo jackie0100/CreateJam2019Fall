@@ -17,7 +17,7 @@ public class PlayerControls : Character
     private float attackCountDown;
 
     [SerializeField]
-    SoundEffect _soundEffect;
+    SoundEvent _soundEffect;
 
     [SerializeField]
     new AudioSource _audioSource;

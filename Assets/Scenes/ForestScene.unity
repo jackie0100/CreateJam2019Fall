@@ -153893,6 +153893,11 @@ PrefabInstance:
       propertyPath: AttackOffSet
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8399727929419273285, guid: b03fea40f120f1f4b9a329a09bc2eaf9,
+        type: 3}
+      propertyPath: Coins
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8399727929842600368, guid: b03fea40f120f1f4b9a329a09bc2eaf9,
         type: 3}
       propertyPath: m_LocalScale.x

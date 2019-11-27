@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ca159385d5846c393932f39e327804, type: 3}
   m_Name: PlayerAttack
   m_EditorClassIdentifier: 
-  limit: 0.01
-  oneShot: 1
   sound:
   - soundFile: {fileID: 8300000, guid: c9205d177d4994649a7517ec68671822, type: 3}
     pitchMin: 0.9

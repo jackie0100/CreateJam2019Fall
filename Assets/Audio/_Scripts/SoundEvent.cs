@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/SoundEffect")]
-public class SoundEffect : ScriptableObject
+[CreateAssetMenu(menuName = "ScriptableObjects/SoundEvent")]
+public class SoundEvent : ScriptableObject
 {
-    public float limit; // seconds
-    public bool oneShot;
+    //public float limit; // seconds
+    //public float timeLastSound;
 
-    private AudioSource audioSource;
-    private int selectedFile;
+    //public bool oneShot;
 
     [System.Serializable]
     public class Sound
@@ -23,8 +22,4 @@ public class SoundEffect : ScriptableObject
         public float volume = 1;
     }
     public Sound[] sound;
-
-    private float timeSinceLastSound;
-    private float timeLastSound;
-    private float clipLength;
 }
