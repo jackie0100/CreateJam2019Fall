@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questText: A wonderful tiny dog, but he seems a bit sad, and yet pretty play full...
     If only you had sometihng to play fetch with... Hmmmmmm....
-  _completedText: Hello hero, wanna see my sick juggling skills?
+  _completedText: What is in my pocket ? ....  it is a .... dog toy ... yes .. a big
+    think pink vibrating .... dag toy
   _startAtNpcId: 0
-  _turninNpcId: 9
+  _turninNpcId: 5
   _leadToQuest:
   - {fileID: 11400000, guid: a2037660c9c2e5147bd4dc5a7c29a289, type: 2}
   _rewards: []

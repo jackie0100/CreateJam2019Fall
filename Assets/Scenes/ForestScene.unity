@@ -12953,6 +12953,11 @@ PrefabInstance:
       propertyPath: AttackDistence
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8399727929419273285, guid: b03fea40f120f1f4b9a329a09bc2eaf9,
+        type: 3}
+      propertyPath: Damage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8399727929018912733, guid: b03fea40f120f1f4b9a329a09bc2eaf9,
         type: 3}
       propertyPath: m_Color.r
@@ -153379,7 +153384,7 @@ PrefabInstance:
     - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: Health
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8287326089497440174, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
@@ -153419,6 +153424,11 @@ PrefabInstance:
       value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 121291639174234959, guid: b72a1a23a033cda4fa293244a9e2620c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859790750554031604, guid: b72a1a23a033cda4fa293244a9e2620c,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -153891,6 +153901,11 @@ PrefabInstance:
     - target: {fileID: 8399727929419273285, guid: b03fea40f120f1f4b9a329a09bc2eaf9,
         type: 3}
       propertyPath: AttackOffSet
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399727929419273285, guid: b03fea40f120f1f4b9a329a09bc2eaf9,
+        type: 3}
+      propertyPath: Damage
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8399727929842600368, guid: b03fea40f120f1f4b9a329a09bc2eaf9,

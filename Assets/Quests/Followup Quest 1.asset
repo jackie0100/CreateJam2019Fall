@@ -15,7 +15,8 @@ MonoBehaviour:
   _questText: 'Chould you go talk with Hulder and give him this scrubbery ? I am allergic  '
   _completedText: Nhi
   _startAtNpcId: 0
-  _turninNpcId: 9
+  _turninNpcId: 6
   _leadToQuest:
   - {fileID: 11400000, guid: d5542c357d036fb44babf4f6d3b8f1c1, type: 2}
+  - {fileID: 11400000, guid: 9e2af4189fab8944daf7c5276eb74538, type: 2}
   _rewards: []
